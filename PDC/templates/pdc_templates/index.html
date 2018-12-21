@@ -1,70 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "pdc_templates/base.html" %}
+{% load staticfiles %}
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>PDC - Construction</title>
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-  <-- Customized CSS -->
-  <link rel="stylesheet" href="static/css/styles.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-  <!-- Bulma Version 0.7.2-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" />
-  <!-- <link href="https://unpkg.com/bulma-fluent@0.3.13/css/bulma.min.css" rel="stylesheet"> -->
-  <link rel="stylesheet" type="text/css" href="../css/personal.css">
-  <script async type="text/javascript" src="../js/bulma.js"></script>
-</head>
+{% block title_block %}
+  PDC Construction
+{% endblock title_block %}
 
-<body>
-  <!-- Navigation bar -->
-  <nav class="navbar is-link is-fixed-top nav-color">
-    <div class="navbar-brand">
-      <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-
-    <div id="navbarExampleTransparentExample" class="navbar-menu nav-color">
-      <div class="navbar-end">
-        <a class="navbar-item" href="#aboutus">
-          <span class="icon">
-            <i class="fas fa-info"></i>
-          </span>
-          <span>About us</span>
-        </a>
-        <a class="navbar-item" href="#whatwedo">
-          <span class="icon">
-            <i class="fas fa-bars"></i>
-          </span>
-          <span>What we do</span>
-        </a>
-        <a class="navbar-item" href="#whereweoperate">
-          <span class="icon">
-            <i class="fas fa-file-alt"></i>
-          </span>
-          <span>Where we operate</span>
-        </a>
-        <a class="navbar-item" href="#portfolio">
-          <span class="icon">
-            <i class="fas fa-th-list"></i>
-          </span>
-          <span>Portfolio</span>
-        </a>
-        <a class="navbar-item" href="#contact">
-          <span class="icon">
-            <i class="fas fa-envelope"></i>
-          </span>
-          <span>Contact</span>
-        </a>
-      </div>
-    </div>
-  </nav>
-
+{% block body_block %}
   <!-- Header -->
   <section class="hero is-link is-fullheight is-fullheight-with-navbar main-theme-color">
     <div class="hero-body">
@@ -780,6 +721,4 @@
       </p>
     </div>
   </footer>
-</body>
-
-</html>
+{% endblock body_block %}
