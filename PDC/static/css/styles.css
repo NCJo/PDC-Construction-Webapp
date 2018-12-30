@@ -9,5 +9,8 @@
     background-color: #0300E0 !important;
 }
 
-
+/* fixed alignment of Company name and logo */
+.nav-brand {
+    line-height: 50px;
+}
      
