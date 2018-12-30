@@ -7,3 +7,6 @@ def index(request):
     # Add html landing page
     return render(request, 'pdc_templates/index.html')
 
+def portfolio(request):
+    return render(request, 'pdc_templates/portfolio.html')
+

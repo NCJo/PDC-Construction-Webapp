@@ -18,9 +18,11 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls import include
 from pdc_app import views
+from django.conf.urls import url
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
-    path('pdc_app', include('pdc_app.urls')),
+    path('portfolio', views.portfolio, name='portfolio'),
+    url('pdc_app/', include('pdc_app.urls')),
 ]

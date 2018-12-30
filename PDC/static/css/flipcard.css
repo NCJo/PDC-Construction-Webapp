@@ -1,0 +1,293 @@
+/* Scrolling Container */
+body {
+    font: 600 14px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
+    margin: 12px 0;
+  }
+
+.card-container {
+    cursor: pointer;
+    height: 150px;
+    perspective: 600;
+    position: relative;
+    width: 150px;
+  }
+  .card {
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+    width: 100%;
+  }
+  .card:hover {
+    transform: rotateY(180deg);
+  }
+  .card .side {
+    backface-visibility: hidden;
+    border-radius: 6px;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+  }
+  .card .back {
+    background: #eaeaed;
+    color: #0087cc;
+    line-height: 150px;
+    text-align: center;
+    transform: rotateY(180deg);
+  }
+
+  /* Portfolio page */
+  $dimensions: 256 !default
+// Combinations
+
+.card
+  .media:not(:last-child)
+    margin-bottom: 0.75rem
+    
+  // Flex content order putting `.card-image` on right /* NOTE: Add this line */
+  &.card--reverse-order /* NOTE: Add this line */
+    flex-direction: row-reverse /* NOTE: Add this line */
+
+  &.is-horizontal
+    // flex-direction: row /* NOTE: Remove this line */
+    display: flex
+    flex-basis: 50ex
+    flex-grow: 0
+    flex-shrink: 1
+    .card-image
+      flex: 4
+      flex-shrink: 1
+      .image
+        display: block
+        position: relative
+        overflow: hidden
+        height: 100%
+        width: 100%
+        img
+          height: 100%
+          object-fit: cover
+          object-position: center
+
+    .card-content
+      flex: 3
+
+
+/* HTML */
+
+<div class="container">
+        <div class="section">
+          <div class="card is-horizontal columns">
+            <div class="card-image column is-three-fifths">
+  
+              <figure class="image is-4by3">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Great_Wave_off_Kanagawa2.jpg" alt="this used to be photo">             
+              </figure>
+            </div>
+            <div class="card-content column is-two-fifths">
+              <div class="media">
+                <div class="media-left">
+                  <figure class="image is-64x64">
+                    <img src="https://source.unsplash.com/random/96x96" alt="Placeholder image">
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <p class="title is-4">Once upon a time there was a sailor</p>
+                  <p class="subtitle is-6"><a class="tag is-delete is-rounded"></a>johnsmith</p>
+                </div>
+              </div>
+  
+              <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                <span class="tag is-link">blackbird was a sailor</span>
+                <span class="tag is-info">that's what you do</span>
+  
+                <br><br>
+  
+                <div class="field is-grouped is-grouped-multiline">
+                  <div class="control">
+                    <div class="tags has-addons">
+                      <span class="tag is-dark">npm</span>
+                      <span class="tag is-info">0.5.0</span>
+                    </div>
+                  </div>
+  
+                  <div class="field is-grouped is-grouped-multiline">
+                    <div class="control">
+                      <div class="tags has-addons">
+                        <span class="tag is-link">axiomaciae</span>
+                        <span class="tag is-info">24. 07. 2020</span>
+                      </div>
+                    </div>
+                    <br>
+                    <time datetime="2018-5-8">15:51 PM - 28 May 2018</time>
+  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+          </div>
+  
+  
+  <div class="container">
+    <div class="section">
+      <div class="card card--reverse-order <!-- NOTE: Add this class --> is-horizontal">
+        <div class="card-image">
+  
+          <figure class="image is-4by3">
+            <img src="https://images.unsplash.com/photo-1496389164152-053867affa71?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=37e33ca9f00792b9ce00350e74074c57&auto=format&fit=crop&w=1051&q=800" alt="this used to be photo">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-right">
+              <figure class="image is-48x48">
+                <img src="https://source.unsplash.com/random/96x96" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Once upon a time there was a sailor</p>
+              <p class="subtitle is-6">@johnsmith</p><a class="tag is-delete"></a>
+            </div>
+          </div>
+  
+          <div class="content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+            <span class="tag is-link">blackbird was a sailor</span>
+            <span class="tag is-info">that's what you do</span>
+  
+            <br><br>
+  
+            <div class="field is-grouped is-grouped-multiline">
+              <div class="control">
+                <div class="tags has-addons">
+                  <span class="tag is-dark">npm</span>
+                  <span class="tag is-info">0.5.0</span>
+                </div>
+              </div>
+  
+              <div class="field is-grouped is-grouped-multiline">
+                <div class="control">
+                  <div class="tags has-addons">
+                    <span class="tag is-link">axiomaciae</span>
+                    <span class="tag is-info">24. 07. 2020</span>
+                  </div>
+                </div>
+                <br>
+                <time datetime="2018-5-8">15:51 PM - 8 May 2018</time>
+  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="container">
+        <div class="section">
+          <div class="card is-horizontal">
+            <div class="card-image">
+  
+              <figure class="image is-4by3">
+                <img src="https://source.unsplash.com/random/1280x960" alt="this used to be photo">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <figure class="image is-48x48">
+                    <img src="https://source.unsplash.com/random/96x96" alt="Placeholder image">
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <p class="title is-4">Once upon a time there was a sailor</p>
+                  <p class="subtitle is-6">@johnsmith</p><a class="tag is-delete"></a>
+                </div>
+              </div>
+  
+              <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                <span class="tag is-link">blackbird was a sailor</span>
+                <span class="tag is-info">that's what you do</span>
+  
+                <br><br>
+  
+                <div class="field is-grouped is-grouped-multiline">
+                  <div class="control">
+                    <div class="tags has-addons">
+                      <span class="tag is-dark">npm</span>
+                      <span class="tag is-info">0.5.0</span>
+                    </div>
+                  </div>
+  
+                  <div class="field is-grouped is-grouped-multiline">
+                    <div class="control">
+                      <div class="tags has-addons">
+                        <span class="tag is-link">axiomaciae</span>
+                        <span class="tag is-info">24. 07. 2020</span>
+                      </div>
+                    </div>
+                    <br>
+                    <time datetime="2018-5-8">15:51 PM - 8 May 2018</time>
+  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+          </div>
+      
+          <div class="section">
+            <div class="card">
+              <div class="card-image">
+  
+                <figure class="image is-4by3">
+                  <img src="https://images.unsplash.com/photo-1496389164152-053867affa71?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=37e33ca9f00792b9ce00350e74074c57&auto=format&fit=crop&w=1051&q=80" alt="this used to be photo">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-right">
+                    <figure class="image is-48x48">
+                      <img src="https://source.unsplash.com/random/96x96" alt="Placeholder image">
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4">Once upon a time there was a sailor</p>
+                    <p class="subtitle is-6">@johnsmith</p><a class="tag is-delete"></a>
+                  </div>
+                </div>
+  
+                <div class="content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                  <span class="tag is-link">blackbird was a sailor</span>
+                  <span class="tag is-info">that's what you do</span>
+  
+                  <br><br>
+  
+                  <div class="field is-grouped is-grouped-multiline">
+                    <div class="control">
+                      <div class="tags has-addons">
+                        <span class="tag is-dark">npm</span>
+                        <span class="tag is-info">0.5.0</span>
+                      </div>
+                    </div>
+  
+                    <div class="field is-grouped is-grouped-multiline">
+                      <div class="control">
+                        <div class="tags has-addons">
+                          <span class="tag is-link">axiomaciae</span>
+                          <span class="tag is-info">24. 07. 2020</span>
+                        </div>
+                      </div>
+                      <br>
+                      <time datetime="2018-5-8">15:51 PM - 8 May 2018</time>
+  
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>     
+          </div>
