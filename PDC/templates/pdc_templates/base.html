@@ -31,7 +31,7 @@
 
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">
         <a style="text-decoration:none;" class="nav-brand mb-0 h4" href="#">
             <img src="https://media.giphy.com/media/FZuRP6WaW5qg/giphy.gif" width="50" height="50" class="d-inline-block align-top" alt="">&nbsp;PDC Construction
         </a>
@@ -44,6 +44,7 @@
             <div class="navbar-nav ml-auto">
                 <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
                 <a class="nav-item nav-link" href="#">About us</a>
+                <a class="nav-item nav-link" href="#">Sustainable</a>
                 <a class="nav-item nav-link" href="#">Portfolio</a>
                 <a class="nav-item nav-link" href="#">Contact Us</a>
             </div>
@@ -51,9 +52,9 @@
     </nav>
 
     <!-- Body BLock -->
-    <div>
+    
     {% block body_block %}
 
     {% endblock body_block %}
-    </div>  
+    
 </body>
