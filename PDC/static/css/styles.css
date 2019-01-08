@@ -60,12 +60,16 @@ body {
     left: 50%;
     transform: translate(-50%,-50%);
 }
-
+/* put element at the bottom floating at X% from top */
 .bottomme {
     position: absolute;
-    top: 90%;
+    top: 85%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.blurme {
+    background-color: rgba(255, 255, 255, 0.4) !important;
 }
 
 .shift-right {
