@@ -1,3 +1,5 @@
+app_name = 'pdc'
+
 """PDC URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -24,5 +26,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
     path('projects/', views.projects, name='projects'),
+    path('projects/samed/', views.samed_gallery, name='samed_gallery'),
     url('pdc_app/', include('pdc_app.urls')),
 ]

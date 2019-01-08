@@ -16,6 +16,9 @@
 .theme-font-color {
     color: #143c55 !important;
 }
+.grey {
+    background-color: rgba(19, 60, 85, 0.2) !important;
+}
 
 /* Fonts */
 .fah-font {
@@ -53,6 +56,7 @@ body {
     padding: 0 !important;
 }
 
+
 /* center text in jumbotron (might work for other) */
 .centerme {
     position: absolute;
@@ -63,13 +67,16 @@ body {
 /* put element at the bottom floating at X% from top */
 .bottomme {
     position: absolute;
-    top: 85%;
+    top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.padmefromnav {
+    padding-top: 120px;
+}
 
 .blurme {
-    background-color: rgba(255, 255, 255, 0.4) !important;
+    background-color: rgba(242, 236, 232, 0.6) !important;
 }
 
 .shift-right {
@@ -83,4 +90,25 @@ body {
 
     display:flex;
     align-items: center;
+}
+
+.spider {
+    height: 50px;
+    width: auto;
+}
+
+.imgheader {
+    position: relative;
+}
+.imgheader img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+.text-center {
+    text-align: center !important;
+}
+
+.padmebit {
+    padding-bottom: 60px;
 }

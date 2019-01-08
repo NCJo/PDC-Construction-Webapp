@@ -1,3 +1,4 @@
+<!-- Hub for gallery -->
 {% extends "pdc_templates/base.html" %}
 {% load staticfiles %}
 
@@ -6,14 +7,40 @@
 {% endblock title_block %}
 
 {% block body_block %}
+<!-- Jumbotron -->
 <div class="jumbotron container col-md-11 vertical-center img-responsive">
-	  <!-- <h1 class="display-4 vertical-center centerme">Our Projects</h1>
-		<p class="lead centerme">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-		<hr class="my-4">
-		<p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> -->
       <div class="container col-md-8 bottomme text-center border border-dark rounded blurme">
-        <h2>Our Projects</h2>
+        <h4 class="row">Our journey started from 1998. We take on many challenging projects such as, warehouses, cargo port, dikes, water treatment facilities, concrete-reinforced infrastructures. We did every project we takes on with quality and integrity as our core values.</h4>
       </div>
 </div>
+
+<div class="container col-md-9">
+  <div class="row justify-content-start">
+    <!-- CP warehouse -->
+    <div class="col-md-4"><img class="img-thumbnail" src="{% static "images/cp_warehouse/cp01.jpg" %}" alt=""></div>
+    <!-- Phettongbor warehouse -->
+    <div class="col-md-4"><img class="img-thumbnail" src="{% static "images/phettongbor_warehouse/pw03.jpg" %}" alt=""></div>
+    <!-- Yipinsoi factory -->
+    <div class="col-md-4"><img class="img-thumbnail" src="{% static "images/yipinsoi_factory/ys03.jpg" %}" alt=""></div>
+  </div>
+  <br>
+  <div class="row justify-content-start">
+    <!-- Samet island -->
+    <div class="col-md-4"><a href="{% url 'samed_gallery' %}"><img class="img-thumbnail" src="{% static "images/samed_island/si03.jpg" %}" alt=""></a></div>
+    <!-- Sangfah port -->
+    <div class="col-md-4"><img class="img-thumbnail" src="{% static "images/sangfah_port/sf03.jpg" %}" alt=""></div>
+    <!-- Sangfah port -->
+    <div class="col-md-4"><img class="" src="" alt=""></div>
+
+  </div>
+  <!-- placeholder -->
+  <!-- <div class="row">
+    <div class="col">7</div>
+    <div class="col">8</div>
+    <div class="col">9</div>
+  </div> -->
+</div>
+
+
+
 {% endblock body_block %}

@@ -29,7 +29,7 @@
     <!-- Customized CSS -->
     <!-- Use django syntax to prevent error -->
     <link rel="stylesheet" href="{% static "css/styles.css" %}">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 
 </head>
@@ -37,7 +37,7 @@
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top white">
-        <a style="text-decoration:none;" class="nav-brand mb-0 h4 fah-font" href="#">
+        <a style="text-decoration:none;" class="nav-brand mb-0 h4 fah-font" href="{% url 'index' %}">
             <img src="{% static "images/logo_trans.png" %}" height="100" class="d-inline-block align-middle shift-right" alt="">&nbsp;&nbsp;PDC Construction
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,10 +47,10 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <!-- ml-auto align the div to the right side -->
             <div class="navbar-nav ml-auto quattro-font">
-                <a class="nav-item nav-link theme-font-color" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link theme-font-color" href="{% url 'index' %}">Home <span class="sr-only">(current)</span></a>
                 <a class="nav-item nav-link active theme-font-color " href="#">About Us</a>
                 <a class="nav-item nav-link theme-font-color active" href="#">Sustainable</a>
-                <a class="nav-item nav-link theme-font-color active" href="#">Projects</a>
+                <a class="nav-item nav-link theme-font-color active" href="{% url 'projects' %}">Projects</a>
                 <a class="nav-item nav-link theme-font-color active" href="#">Contact Us</a>
                 <!-- TODO: Button shows current language -->
                 <!-- TODO: drop down menu selection? -->
@@ -70,8 +70,7 @@
     <footer class="footer font-small blue">
         <!-- Copyright -->
         <div class="footer-copyright text-center py-3">© 2018 Copyright:
-            <a href="">&nbsp; Spider Inc</a>    
+            <a href=""><img class="spider" src="{% static "images/spider_logo.png" %}" alt="">&nbsp; Spider Inc</a>    
         </div>
     </footer>
-    
 </body>

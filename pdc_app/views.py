@@ -10,3 +10,6 @@ def index(request):
 def projects(request):
     return render(request, 'pdc_templates/projects.html')
 
+def samed_gallery(request):
+    return render(request, 'pdc_templates/samed.html')
+
