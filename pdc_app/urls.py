@@ -1,4 +1,4 @@
-# curently broken
+# curently
 
 app_name = 'pdc_app'
 from django.urls import path
@@ -7,5 +7,7 @@ from pdc_app import views
 
 urlpatterns = [
     path('', views.index, name='index'),
-    path('portfolio/', views.portfolio, name="portfolio"),
+    
+    # not working
+    # path('projects/', views.projects, name="projects"),
 ]

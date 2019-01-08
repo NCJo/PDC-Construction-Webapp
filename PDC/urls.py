@@ -23,6 +23,6 @@ from django.conf.urls import url
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
-    path('portfolio', views.portfolio, name='portfolio'),
+    path('projects/', views.projects, name='projects'),
     url('pdc_app/', include('pdc_app.urls')),
 ]
