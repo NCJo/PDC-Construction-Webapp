@@ -1,0 +1,125 @@
+{% extends "pdc_templates/base.html" %}
+{% load staticfiles %}
+
+{% block title_block %}
+    Samed Island Port 
+{% endblock title_block %}
+
+{% block body_block %}
+
+<!-- Banner -->
+<div class="imgheader img-fluid">
+    <img class="padmefromnav" src="{% static "images/yipinsoi_factory/ys01_banner.jpg" %}" alt="">
+</div>
+
+<!-- Title -->
+<div class="container padmebit">
+    <h1 class="col padmefromnav text-center">Project:</h1>
+    <hr class="" size="5">
+    <h4 class="col text-center">Fertilizer Warehouse</h4>
+</div>
+
+<!-- Description -->
+<div class="container text-center grey border border-dark rounded my-auto">
+    <div class="row">
+        <div class="col order-first my-auto">
+            <img class="img-thumbnail " src="{% static "images/yipinsoi_factory/ys02.jpg" %}" alt="">
+        </div>
+        <div class="col order-last my-auto">
+            <h4>Project Details</h4>
+            <br>
+            <h6>Owner:&nbsp;&nbsp;&nbsp;&nbsp;Yip-In-Soil and Yak Inc.</h6>
+            <br>
+            <h6>Location:&nbsp;&nbsp;&nbsp;&nbsp;District of Nakornluang, City of Ayothaya</h6>
+            <br>
+            <h6>Value:&nbsp;&nbsp;&nbsp;&nbsp;70,000,000.00 Baht</h6>
+            <br>
+            {% comment %} <h6></h6>
+            <br> {% endcomment %}
+        </div>
+    </div>
+</div>
+
+<div class="container padmebit">
+        <h1 class="col padmefromnav text-center">Project Gallery</h1>
+        <hr class="" size="5">
+</div>
+<!-- Carousel -->
+<div id="demo" class="container col-md-11 carousel slide" data-ride="carousel">
+
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#demo" data-slide-to="0" class="active"></li>
+			<li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+            {% comment %} <li data-target="#demo" data-slide-to="3"></li>
+            <li data-target="#demo" data-slide-to="4"></li>
+            <li data-target="#demo" data-slide-to="5"></li> {% endcomment %}
+		</ol>
+
+		<!-- Carousel -->
+		<div class="carousel-inner">
+		  <div class="carousel-item active">
+			<img class="d-block w-100" src="{% static "images/yipinsoi_factory/ys01.jpg" %}" alt="First slide">
+			<div class="carousel-caption d-none d-md-block">
+				<h5>We are PDC Construction</h5>
+				<p>We love building things</p>
+			</div>
+		  </div>
+		  <div class="carousel-item">
+			<img class="d-block w-100" src="{% static "images/yipinsoi_factory/ys02.jpg" %}" alt="Second slide">
+			<div class="carousel-caption d-none d-md-block">
+				<h5>Tractors are cool!</h5>
+				<p>Vroom Vrooooom!</p>
+			</div>
+		  </div>
+		  <div class="carousel-item">
+			<img class="d-block w-100" src="{% static "images/yipinsoi_factory/ys03.jpg" %}" alt="Third slide">
+			<div class="carousel-caption d-none d-md-block">
+				<h5>Mr. Meoworker</h5>
+				<p>Sleeping all day!</p>
+			</div>
+          </div>
+          {% comment %} <div class="carousel-item">
+            <img class="d-block w-100" src="{% static "images/samed_island/si04.jpg" %}" alt="Third slide">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Mr. Meoworker</h5>
+                <p>Sleeping all day!</p>
+            </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="{% static "images/samed_island/si05.jpg" %}" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Mr. Meoworker</h5>
+                    <p>Sleeping all day!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="{% static "images/samed_island/si06.jpg" %}" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Mr. Meoworker</h5>
+                    <p>Sleeping all day!</p>
+                </div>
+            </div> {% endcomment %}
+		</div>
+
+		<!-- Carousel controls left and right -->
+		<a class="carousel-control-prev" href="#demo" role="button" data-slide="prev">
+		  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		  <span class="sr-only">Previous</span>
+		</a>
+		<a class="carousel-control-next" href="#demo" role="button" data-slide="next">
+		  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		  <span class="sr-only">Next</span>
+		</a>
+    </div>
+    <br>
+    <br>
+	<!-- End of Carousel -->
+	
+    
+    
+</div>
+
+
+{% endblock body_block %}

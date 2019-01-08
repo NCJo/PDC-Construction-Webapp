@@ -27,5 +27,9 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('projects/', views.projects, name='projects'),
     path('projects/samed/', views.samed_gallery, name='samed_gallery'),
+    path('projects/ptb/', views.ptb_gallery, name='ptb_gallery'),
+    path('projects/cp/', views.cp_gallery, name='cp_gallery'),
+    path('projects/yip/', views.yip_gallery, name='yip_gallery'),
+    path('projects/sangfah/', views.sangfah_gallery, name='sangfah_gallery'),
     url('pdc_app/', include('pdc_app.urls')),
 ]

@@ -13,3 +13,14 @@ def projects(request):
 def samed_gallery(request):
     return render(request, 'pdc_templates/samed.html')
 
+def ptb_gallery(request):
+    return render(request, 'pdc_templates/ptb_warehouse.html')
+
+def cp_gallery(request):
+    return render(request, 'pdc_templates/cp.html')
+
+def yip_gallery(request):
+    return render(request, 'pdc_templates/yip_fac.html')
+
+def sangfah_gallery(request):
+    return render(request, 'pdc_templates/sangfah.html')
