@@ -14,35 +14,126 @@
       </div>
 </div>
 
-<!-- TODO: "project showcase" -->
-
-<div class="container col-md-9">
-  <div class="row justify-content-start">
-    <!-- CP warehouse -->
-    <div class="col-md-4"><a href="{% url 'cp_gallery' %}"><img class="img-thumbnail" src="{% static "images/cp_warehouse/cp01.jpg" %}" alt=""></a></div>
-    <!-- Phettongbor warehouse -->
-    <div class="col-md-4"><a href="{% url 'ptb_gallery' %}"><img class="img-thumbnail" src="{% static "images/ptb_warehouse/pw03.jpg" %}" alt=""></a></div>
-    <!-- Yipinsoi factory -->
-    <div class="col-md-4"><a href="{% url 'yip_gallery' %}"><img class="img-thumbnail" src="{% static "images/yipinsoi_factory/ys03.jpg" %}" alt=""></a></div>
+<!-- Filter Tags -->
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <p>Filter By /  :
+        <button type="button" class="btn btn-outline-dark btn-xs btn-tag">All</button>
+        <button type="button" class="btn btn-outline-dark btn-xs btn-tag">Port</button>
+        <button type="button" class="btn btn-outline-dark btn-xs btn-tag">Warehouse</button>
+        <button type="button" class="btn btn-outline-dark btn-xs btn-tag">Infrastructure</button>
+        <button type="button" class="btn btn-outline-dark btn-xs btn-tag">Office</button>
+        
+      </p>
+    </div>  
   </div>
-  <br>
-  <div class="row justify-content-start">
-    <!-- Samet island -->
-    <div class="col-md-4"><a href="{% url 'samed_gallery' %}"><img class="img-thumbnail" src="{% static "images/samed_island/si03.jpg" %}" alt=""></a></div>
-    <!-- Sangfah port -->
-    <div class="col-md-4"><a href="{% url 'sangfah_gallery' %}"><img class="img-thumbnail" src="{% static "images/sangfah_port/sf03.jpg" %}" alt=""></a></div>
-    <!-- Sangfah port -->
-    <div class="col-md-4"><img class="" src="" alt=""></div>
-
-  </div>
-  <!-- placeholder -->
-  <!-- <div class="row">
-    <div class="col">7</div>
-    <div class="col">8</div>
-    <div class="col">9</div>
-  </div> -->
+</div>
+<!-- Description -->
+<div class="container grey border border-dark rounded my-auto panel" id="project1">
+    <div class="row">
+        <div class="col order-first my-auto">
+            <a href="{% url 'samed_gallery' %}"><img class="img-thumbnail " src="{% static "images/samed_island/si04.jpg" %}" alt=""></a>
+        </div>
+        <div class="col order-last my-auto">
+            <h4>ท่าเรือเกาะเสม็ด</h4>
+            <h6>เจ้าของโครงการ&nbsp;:&nbsp;&nbsp;&nbsp;องค์การบริหารส่วนจังหวัดระยอง</h6>
+            <br>
+            <h4>Samed Port</h4>
+            <h6>Client&nbsp;:&nbsp;&nbsp;&nbsp;City of Rayong</h6>
+            <br>
+            <a href="{% url 'samed_gallery' %}" class="btn btn-primary btn" role="button" aria-disabled="true">Read More</button></a>
+            <div class="panel-footer tag padmetop">
+              <span class="badge badge-secondary label label-primary hidden">All</span>
+              <span class="badge badge-secondary label label-primary">Port</span>
+            </div>
+        </div>
+    </div>
 </div>
 
+<div class="container grey border border-dark rounded my-auto panel" id="project2">
+    <div class="row">
+        <div class="col order-first my-auto">
+            <a href="{% url 'cp_gallery' %}"><img class="img-thumbnail " src="{% static "images/cp_warehouse/cp02.jpg" %}" alt=""></a>
+        </div>
+        <div class="col order-last my-auto">
+            <h4>NO DATA</h4>
+            <h6>เจ้าของโครงการ&nbsp;:&nbsp;&nbsp;&nbsp;NO DATA</h6>
+            <br>
+            <h4>NO DATA CP Crane Infrastructure</h4>
+            <h6>Client&nbsp;:&nbsp;&nbsp;&nbsp;City of Rayong</h6>
+            <br>
+            <a href="{% url 'cp_gallery' %}" class="btn btn-primary btn" role="button" aria-disabled="true">Read More</button></a>
+            <div class="panel-footer tag padmetop">
+                <span class="badge badge-secondary label label-primary hidden">All</span>
+                <span class="badge badge-secondary label label-primary">Infrastructure</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container grey border border-dark rounded my-auto panel" id="project3">
+    <div class="row">
+        <div class="col order-first my-auto">
+            <a href="{% url 'yip_gallery' %}"><img class="img-thumbnail " src="{% static "images/yipinsoi_factory/ys02.jpg" %}" alt=""></a>
+        </div>
+        <div class="col order-last my-auto">
+            <h4>โรงงานผลิตปุ๋ย</h4>
+            <h6>เจ้าของโครงการ&nbsp;:&nbsp;&nbsp;&nbsp;บริษัทยิบอินซอยและแยคส์จำกัด</h6>
+            <br>
+            <h4>Fertilizer Production Building</h4>
+            <h6>Client&nbsp;:&nbsp;&nbsp;&nbsp;Yip-In-Soil and Yak CO.,LTD.</h6>
+            <br>
+            <a href="{% url 'yip_gallery' %}"class="btn btn-primary btn" role="button" aria-disabled="true">Read More</button></a>
+            <div class="panel-footer tag padmetop">
+                <span class="badge badge-secondary label label-primary hidden">All</span>
+                <span class="badge badge-secondary label label-primary">Infrastructure</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container grey border border-dark rounded my-auto panel" id="project4">
+    <div class="row">
+        <div class="col order-first my-auto">
+            <a href="{% url 'ptb_gallery' %}"><img class="img-thumbnail " src="{% static "images/ptb_warehouse/pw01.jpg" %}" alt=""></a>
+        </div>
+        <div class="col order-last my-auto">
+            <h4>NO DATA</h4>
+            <h6>เจ้าของโครงการ&nbsp;:&nbsp;&nbsp;&nbsp;NO DATA</h6>
+            <br>
+            <h4>NO DATA - PTB</h4>
+            <h6>Client&nbsp;:&nbsp;&nbsp;&nbsp;NO DATA</h6>
+            <br>
+            <a href="{% url 'ptb_gallery' %}" class="btn btn-primary btn" role="button" aria-disabled="true">Read More</button></a>
+            <div class="panel-footer tag padmetop">
+                <span class="badge badge-secondary label label-primary hidden">All</span>
+                <span class="badge badge-secondary label label-primary">Warehouse</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container grey border border-dark rounded my-auto panel" id="project5">
+    <div class="row">
+        <div class="col order-first my-auto">
+            <a href="{% url 'sangfah_gallery' %}"><img class="img-thumbnail " src="{% static "images/sangfah_port/sf03.jpg" %}" alt=""></a>
+        </div>
+        <div class="col order-last my-auto">
+            <h4>ก่อสร้างโครงการ Packing Building 2</h4>
+            <h6>เจ้าของโครงการ&nbsp;:&nbsp;&nbsp;&nbsp;บริษัทแสงฟ้าอะกริโปรดักส์จำกัด</h6>
+            <br>
+            <h4>Packing Building</h4>
+            <h6>Client&nbsp;:&nbsp;&nbsp;&nbsp;Sangfah Agri Product CO.,LTD.</h6>
+            <br>
+            <a href="{% url 'sangfah_gallery' %}"class="btn btn-primary btn" role="button" aria-disabled="true">Read More</button></a> 
+            <div class="panel-footer tag padmetop">
+                <span class="badge badge-secondary label label-primary hidden">All</span>
+                <span class="badge badge-secondary label label-primary">Office</span>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 {% endblock body_block %}
