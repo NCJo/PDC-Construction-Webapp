@@ -33,7 +33,7 @@ $(document).ready(function() {
         var ww = document.body.clientWidth;
         if (ww < 625) {
             $('#pdc_logo').removeClass('shift-right');
-            $('#grid-gallery').find('*').addClass('no-right-pad');
+            // $('#grid-gallery').find('*').addClass('no-right-pad');
         } else if (ww >= 666) {
             $('#pdc_logo').addClass('shift-right');
             $('#pdc_logo').addClass('mx-auto');
