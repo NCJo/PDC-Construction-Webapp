@@ -145,6 +145,10 @@ body {
     padding-right: 0px !important;
 }
 
+.move-bit-right {
+    transform: translateX(2%);
+}
+
 /* Cellphone */
 /* use % on 'width' instead of 'px'*/
 @media only screen and (max-width: 530px) {
@@ -165,9 +169,7 @@ body {
         padding-right: 0%;
     }
     /* This will occupied 95% of the screen and keep it centered */
-    #pdc_logo {
-        
-    }
+
 }
 
 /* Desktop */
