@@ -33,13 +33,15 @@ $(document).ready(function() {
         var ww = document.body.clientWidth;
         if (ww < 625) {
             $('#pdc_logo').removeClass('shift-right');
-            ('#pdc_logo').removeClass('d-inline-block');
-            $('#pdc_logo').addClass('centered');
+            $('#grid-gallery').find('*').addClass('no-right-pad');
         } else if (ww >= 666) {
             $('#pdc_logo').addClass('shift-right');
             $('#pdc_logo').addClass('mx-auto');
-            $('navbarDropdown').addClass('mr-auto');
+            
         };
+        if (ww < 578) {
+            $('.col-md-4').addClass('no-right-pad');
+        }
 
     };
     $(window).resize(function(){

@@ -140,11 +140,10 @@ body {
     margin-right: 0px;
 }
 
-.centered {
-    margin: 0 auto;
-    width: 75%;
+/* This is for get rid of padding on the right */
+.no-right-pad {
+    padding-right: 0px !important;
 }
-
 
 /* Cellphone */
 /* use % on 'width' instead of 'px'*/
