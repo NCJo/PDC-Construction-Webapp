@@ -42,7 +42,7 @@
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top white">
         <a style="text-decoration:none;" class="nav-brand mb-0 h4 fah-font" href="{% url 'index' %}">
-            <img src="{% static "images/pdc_logo_enth.png" %}" height="130" class="d-inline-block align-middle shift-right" alt="">
+            <img id="pdc_logo"  src="{% static "images/pdc_logo_enth.png" %}" height="130" class="d-inline-block align-middle shift-right" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -51,11 +51,11 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <!-- ml-auto align the div to the right side -->
             <div class="navbar-nav ml-auto quattro-font">
-                <a class="nav-item nav-link theme-font-color" href="{% url 'index' %}">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link active theme-font-color " href="#">About Us</a>
-                <a class="nav-item nav-link theme-font-color active" href="#">Sustainable</a>
-                <a class="nav-item nav-link theme-font-color active" href="{% url 'projects' %}">Projects</a>
-                <a class="nav-item nav-link theme-font-color active" href="#">Contact Us</a>
+                <a class="nav-item nav-link theme-font-color lead" href="{% url 'index' %}">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link active theme-font-color lead" href="#">About Us</a>
+                <a class="nav-item nav-link theme-font-color active lead" href="#">Sustainable</a>
+                <a class="nav-item nav-link theme-font-color active lead" href="{% url 'projects' %}">Projects</a>
+                <a class="nav-item nav-link theme-font-color active lead" href="#">Contact Us</a>
                 <!-- TODO: Button shows current language -->
                 <!-- TODO: drop down menu selection? -->
                 <!-- <a class="nav-item nav-link active" href="#">TH</a>

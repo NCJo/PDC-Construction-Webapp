@@ -1,6 +1,5 @@
+// Filter script
 $(document).ready(function() {
-
-
     $(".btn-tag").click(function(eventObject) {
       var tag = $(this).html();
     //   console.log(tag);
@@ -23,4 +22,29 @@ $(document).ready(function() {
   
     });
     //console.log("total panel: " + document.getElementsByClassName("panel").length );
+});
+// End of Filter script
+
+// Remove class
+// TODO: erase shift-right function from logo when screen size is xxxx
+$(document).ready(function() {
+    var alterClass = function() {
+        // window's width
+        var ww = document.body.clientWidth;
+        if (ww < 625) {
+            $('#pdc_logo').removeClass('shift-right');
+            ('#pdc_logo').removeClass('d-inline-block');
+            $('#pdc_logo').addClass('centered');
+        } else if (ww >= 666) {
+            $('#pdc_logo').addClass('shift-right');
+            $('#pdc_logo').addClass('mx-auto');
+            $('navbarDropdown').addClass('mr-auto');
+        };
+
+    };
+    $(window).resize(function(){
+        alterClass();
+    });
+    // Fire it after page first load
+    alterClass();
 });
