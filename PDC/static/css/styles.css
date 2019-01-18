@@ -1,6 +1,7 @@
 /* Debug colors */
 .main-theme-color {
-    background-color: #143c55 !important;
+    /* background-color: #143c55 !important; */
+    background-color: rgba(93, 95, 102, 0.2)
 }
 .nav-color {
     background-color: #143c55 !important;
@@ -14,13 +15,19 @@
     background-color: rgba(255, 255, 255, 0.7) !important;
 }
 .bg-white {
-    background-color: #e8f1f2 !important;
+    background-color: #fff !important;
+}
+.white-tx {
+    color: #e8f1f2 !important;
 }
 .theme-font-color {
     color: #143c55 !important;
 }
 .grey {
     background-color: rgba(19, 60, 85, 0.2) !important;
+}
+.footer {
+    background-color: rgba(20, 42, 140, 1) !important;
 }
 
 /* Fonts */
@@ -41,13 +48,12 @@ body {
     /* gap between first content and navbar */
     /* padding-top: 120px; */
     /* background-color: #E8F1F2 !important; */
-    background-color: #f5f5f5 !important;
+    /* background-color: rgba(20, 42, 140, 0.4) !important; */
+    background-color: rgba(93, 95, 102, 0.1) !important;
+    
 
 }
 
-.footer {
-    background-color: rgba(20, 60, 85, 0.2);
-}
 
 /* force size on images on carousel */
 .carousel-item img {
@@ -102,7 +108,7 @@ body {
 }
 
 .spider {
-    height: 50px;
+    height: 45px;
     width: auto;
 }
 
@@ -145,16 +151,16 @@ body {
     padding-right: 0px !important;
 }
 
-.move-bit-right {
-    transform: translateX(2%);
-}
+
+
+
 
 /* Cellphone */
 /* use % on 'width' instead of 'px'*/
 @media only screen and (max-width: 530px) {
     .container {
+        padding-right: 0% !important;
         padding-left: 0%;
-        padding-right: 0%;
     }
     /* This will occupied 95% of the screen and keep it centered */
     #pdc_logo {
@@ -165,8 +171,6 @@ body {
 /* Tablet */
 @media only screen and (max-width: 695px) {
     .container {
-        padding-left: 0%;
-        padding-right: 0%;
     }
     /* This will occupied 95% of the screen and keep it centered */
 
@@ -175,7 +179,6 @@ body {
 /* Desktop */
 @media only screen and (min-width: 990px) {
     .container {
-        padding-left: 0%;
-        padding-right: 0%;
+        /* padding-right: 0%; */
     }
 }

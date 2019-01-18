@@ -39,9 +39,39 @@ $(document).ready(function() {
             $('#pdc_logo').addClass('mx-auto');
             
         };
+        // Fix weird right side margin
         if (ww < 578) {
             $('.col-md-4').addClass('no-right-pad');
+        };
+        // Get rid of max-height, min-width
+        if (ww < 1030) {
+            $('div.carousel-item > img').css({"max-height":"none", "min-width":"auto"});
+        } else if (ww >= 1031) {
+            $('div.carousel-item > img').css({"max-height":"726px", "min-width":"auto"});
+            // $('.carousel-inner').addClass('col-md-7');
+        };
+        
+        if (ww < 1160) {
+            // Banner
+            $('div.imgheader > img').css({"max-height":"400", "min-width":"auto"});
+            // Align descriptions
+            $('#desc_table').removeClass('align-self-center');
         }
+        if (ww <= 768) {
+            // ipad and ipad pro - carousel size
+            $('#demo').removeClass('col-md-5');
+            $('#demo').addClass('col-md-11');
+        } else if (ww > 769) {
+            $('#demo').removeClass('col-md-11');
+            $('#demo').addClass('col-md-5');
+        }
+
+
+        if (ww <= 1240) {
+            $('nav > a > img').removeClass('shift-right');
+            $('nav > a > img').addClass('align-self-center');
+        }
+        
 
     };
     $(window).resize(function(){
