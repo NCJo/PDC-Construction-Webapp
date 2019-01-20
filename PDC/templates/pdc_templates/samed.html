@@ -9,12 +9,12 @@
 
 <!-- Banner -->
 <div class="imgheader img-fluid">
-    <img class="padmefromnav" src="{% static "images/samed_island/si03_banner.jpg" %}" alt="">
+    <img class="padmefromnav" id="banner" src="{% static "images/samed_island/si03_banner.jpg" %}" alt="">
 </div>
 
 <!-- Title -->
-<div class="container padmebit">
-    <h1 class="col padmefromnav text-center">Project:</h1>
+<div class="container padmefrombanner padmebit">
+    <h1 class="col text-center">Project:</h1>
     <hr class="" size="5">
     <h4 class="col text-center">ท่าเรือเกาะเสม็ด (Samed Island Port)</h4>
 </div>
@@ -33,7 +33,7 @@
 		</ol>
 
 		<!-- Carousel -->
-		<div class="carousel-inner">
+		<div class="carousel-inner shadow">
 		  <div class="carousel-item active">
 			<img class="d-block w-100 img-fluid" src="{% static "images/samed_island/si01.jpg" %}" alt="First slide">
 			<div class="carousel-caption d-none d-md-block">
@@ -95,15 +95,11 @@
 <br>
 
 <!-- Description -->
+<div class='align-self-center text-center'><h4>ข้อมูลของโครงการ</h4></div>
 <div class="container bg-white col-lg-7">
     <div class="row">
         <div class= "col align-self-center" id="desc_table">
         <table class="table order-first">
-            <thead>
-                <tr>
-                    <th scope="text-center"><h4>ข้อมูลของโครงการ</h4></th>
-                </tr>
-            </thead>
             <tbody>
                 <tr>
                     <th scope="row">เจ้าของโครงการ (Client)</th>
@@ -188,27 +184,57 @@
 
 <br>
 
+<!-- class: gallery-container -->
+<!-- class: tz-gallery -->
+<!-- class: lightbox -->
 <!-- Grid -->
-<div class="container col-md-11">
-  <div class="row justify-content-start" id="grid-gallery">
-    
-    <!-- CP warehouse -->
-    <div class="col-md-4"><a href=""><img class="img-thumbnail" src="{% static "images/samed_island/si01.jpg" %}" alt=""></a></div>
-    <!-- Phettongbor warehouse -->
-    <div class="col-md-4"><a href=""><img class="img-thumbnail" src="{% static "images/samed_island/si02.jpg" %}" alt=""></a></div>
-    <!-- Yipinsoi factory -->
-    <div class="col-md-4"><a href=""><img class="img-thumbnail" src="{% static "images/samed_island/si03.jpg" %}" alt=""></a></div>
-  </div>
-  <br>
-  <div class="row justify-content-start">
-    <!-- Samet island -->
-    <div class="col-md-4"><a href=""><img class="img-thumbnail" src="{% static "images/samed_island/si04.jpg" %}" alt=""></a></div>
-    <!-- Sangfah port -->
-    <div class="col-md-4"><a href=""><img class="img-thumbnail" src="{% static "images/samed_island/si05.jpg" %}" alt=""></a></div>
-    <!-- Sangfah port -->
-    <div class="col-md-4"><a href=""><img class="img-thumbnail" src="{% static "images/samed_island/si06.jpg" %}" alt=""></a></div>
 
-  </div>
+<div class="container col-md-11 gallery-container">
+    <div class="tz-gallery">
+        <div class="row justify-content-start" id="grid-gallery">
+            
+            <!-- CP warehouse -->
+            <div class="col-sm-12 col-md-4">
+                <a class ="lightbox" href="{% static "images/samed_island/si01.jpg" %}">
+                    <img class="img-thumbnail shadow img-fluid" src="{% static "images/samed_island/si01.jpg" %}" alt="">
+                </a>
+            </div>
+            <!-- Phettongbor warehouse -->
+            <div class="col-sm-6 col-md-4">
+                <a class ="lightbox" href="{% static "images/samed_island/si02.jpg" %}">
+                    <img class="img-thumbnail shadow img-fluid lightbox" src="{% static "images/samed_island/si02.jpg" %}" alt="">
+                </a>
+            </div>
+            <!-- Yipinsoi factory -->
+            <div class="col-sm-6 col-md-4">
+                <a class ="lightbox" href="{% static "images/samed_island/si03.jpg" %}">
+                    <img class="img-thumbnail shadow img-fluid lightbox" src="{% static "images/samed_island/si03.jpg" %}" alt="">
+                </a>
+            </div>
+        </div>
+        <br>
+        <div class="row justify-content-start">
+            <!-- Samet island -->
+            <div class="col-sm-12 col-md-4">
+                <a class ="lightbox" href="{% static "images/samed_island/si04.jpg" %}">
+                    <img class="img-thumbnail shadow img-fluid lightbox" src="{% static "images/samed_island/si04.jpg" %}" alt="">
+                </a>
+            </div>
+            <!-- Sangfah port -->
+            <div class="col-sm-6 col-md-4">
+                <a class ="lightbox" href="{% static "images/samed_island/si05.jpg" %}">
+                    <img class="img-thumbnail shadow img-fluid lightbox" src="{% static "images/samed_island/si05.jpg" %}" alt="">
+                </a>
+            </div>
+            <!-- Sangfah port -->
+            <div class="col-sm-6 col-md-4">
+                <a class ="lightbox" href="{% static "images/samed_island/si06.jpg" %}">
+                    <img class="img-thumbnail shadow img-fluid lightbox" src="{% static "images/samed_island/si06.jpg" %}" alt="">
+                </a>
+            </div>
+
+        </div>
+    </div>
   <!-- placeholder -->
   <!-- <div class="row">
     <div class="col">7</div>

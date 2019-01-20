@@ -87,7 +87,10 @@ body {
     transform: translate(-50%, -50%);
 }
 .padmefromnav {
-    padding-top: 120px;
+    padding-top: 146px;
+}
+.padmefromnav-sm {
+    padding-top: 185px;
 }
 
 .blurme {
@@ -131,6 +134,9 @@ body {
 .padmetop {
     padding-top: 5px;
 }
+.padmefrombanner {
+    padding-top: 30px;
+}
 
 /* For hiding 'All' tag filter */
 .hidden {
@@ -151,8 +157,11 @@ body {
     padding-right: 0px !important;
 }
 
-
-
+.img-align-c {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
 
 /* Cellphone */

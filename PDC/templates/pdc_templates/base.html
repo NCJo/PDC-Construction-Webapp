@@ -3,6 +3,7 @@
 {% load staticfiles %}
 
 <head>
+    <link rel="shortcut icon" href="{% static "images/logo_trans.png" %}" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -15,6 +16,7 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Fahkwang" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
 
     <!-- jQuery + Popper come before Bootstrap -->
     <!-- jQuery -->
@@ -35,6 +37,10 @@
     <link rel="stylesheet" href="{% static "css/styles.css" %}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+    <!-- For gallery animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="{% static "css/fluid-gallery.css" %}">
 
 </head>
 
@@ -70,6 +76,7 @@
 
     {% endblock body_block %}
 
+    <br>
     <!-- Footer -->
     <footer class="footer font-small">
         <!-- Copyright -->
@@ -78,4 +85,13 @@
         </div>
     </footer>
 
+    <!-- Animated gallery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.0/baguetteBox.js"></script>
+    
+    <script>
+        baguetteBox.run('.tz-gallery',{
+            animation: 'fadeIn'
+        });
+    </script>
 </body>
+</html>

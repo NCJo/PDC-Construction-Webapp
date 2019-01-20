@@ -61,16 +61,39 @@ $(document).ready(function() {
             // ipad and ipad pro - carousel size
             $('#demo').removeClass('col-md-5');
             $('#demo').addClass('col-md-11');
+            // Gallery col-md-11 set all
+            $('.panel').addClass('col-md-11');
+            
         } else if (ww > 769) {
+            // ipad and ipad pro - carousel size
             $('#demo').removeClass('col-md-11');
             $('#demo').addClass('col-md-5');
+            // Gallery size col-md-5
+            $('.panel').removeClass('col-md-11');
+            $('.panel').addClass('col-md-7');
+            
         }
-
 
         if (ww <= 1240) {
+            // Possible logo?
             $('nav > a > img').removeClass('shift-right');
             $('nav > a > img').addClass('align-self-center');
+            $('div > div > div > a > img').css({"margin-top":"0px", "margin-bottom":"0px"});
+        } else if (ww > 1241) {
+            $('div > div > div > a > img').css({"margin-top":"10px", "margin-bottom":"10px"});
         }
+
+        // Fix overlapped banner and nav @530
+        if (ww <= 530) {
+            $('#banner').removeClass('padmefromnav');
+            $('#banner').addClass('padmefromnav-sm');
+        } else if (ww > 531) {
+            $('#banner').removeClass('padmefromnav-sm');
+            $('#banner').addClass('padmefromnav');
+        }
+
+
+
         
 
     };
