@@ -23,26 +23,44 @@
 .theme-font-color {
     color: #143c55 !important;
 }
+.pdc-color {
+    color: #2b2a8c;
+}
 .grey {
     background-color: rgba(19, 60, 85, 0.2) !important;
 }
 .footer {
     background-color: rgba(20, 42, 140, 1) !important;
 }
+#landing-carousel {
+    /* background-color: #434449 !important; */
+}
+.card-header {
+    background-color: white !important;
+}
 
 /* Fonts */
 .fah-font {
     font-family: 'Fahkwang', sans-serif;
 }
-
 .quattro-font {
     font-family: 'Quattrocento Sans', sans-serif;
+}
+.taviraj-font {
+    font-family: 'Taviraj', serif;
+}
+h1, h2, h3, h4, h5, h6, h7 {
+    font-family: 'Taviraj', serif !important;
+}
+#navbarNavDropdown div a {
+    font-family: 'Merriweather', serif;
 }
 
 /* fixed alignment of Company name and logo */
 .nav-brand {
     line-height: 50px;
 }
+
      
 body {
     /* gap between first content and navbar */
@@ -50,13 +68,19 @@ body {
     /* background-color: #E8F1F2 !important; */
     /* background-color: rgba(20, 42, 140, 0.4) !important; */
     background-color: rgba(93, 95, 102, 0.1) !important;
-    
-
 }
 
+/* Carousels */
+#demo {
+    /* background-color: black !important; */
+}
+
+#landing-carousel div div img {
+    height: 853px;    
+}
 
 /* force size on images on carousel */
-.carousel-item img {
+#demo div div img {
     max-height: 365px;
     min-width: auto;
 }
@@ -71,7 +95,8 @@ body {
     padding: 0 !important;
 }
 
-
+/* obsolete */
+/* use this: https://stackoverflow.com/questions/42252443/vertical-align-center-in-bootstrap-4 */
 /* center text in jumbotron (might work for other) */
 .centerme {
     position: absolute;
@@ -129,10 +154,10 @@ body {
 
 .padmebit {
     padding-top: -60px;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
 }
 .padmetop {
-    padding-top: 5px;
+    padding-top: 0.2em;
 }
 .padmefrombanner {
     padding-top: 30px;
@@ -163,6 +188,23 @@ body {
     flex-wrap: wrap;
 }
 
+/* fade in for gallery */
+.fade-in {
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+}
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 /*
 ####################################################
 M E D I A  Q U E R I E S
@@ -171,7 +213,15 @@ M E D I A  Q U E R I E S
 
 /* Cellphone */
 /* use % on 'width' instead of 'px'*/
-@media only screen and (max-width: 530px) {
+@media screen and (max-width: 530px) {
+    h1 {font-size: 24px;}
+    h2 {font-size: 19px;}
+    h3 {font-size: 17px;}
+    h4 {font-size: 15px;}
+    h5 {font-size: 11px;}
+    h6 {font-size: 12px;}
+    h7 {font-size: 9px;}
+    .rwd-break {display: none;}
     .container {
         padding-right: 0% !important;
         padding-left: 0%;
@@ -180,19 +230,40 @@ M E D I A  Q U E R I E S
     #pdc_logo {
         width: 95%;
     }
+    #landing-carousel div div img {
+        height: 360px;    
+    }
 }
 
 /* Tablet */
-@media only screen and (max-width: 695px) {
-    .container {
+@media screen and (min-width: 531px) and (max-width: 768px) {
+    h1 {font-size: 24px;}
+    h2 {font-size: 22px;}
+    h3 {font-size: 20px;}
+    h4 {font-size: 18px;}
+    h5 {font-size: 13px;}
+    h6 {font-size: 15px;}
+    h7 {font-size: 12px;}
+    .rwd-break {display: none;}
+    #landing-carousel div div img {
+        height: 531px;    
     }
-    /* This will occupied 95% of the screen and keep it centered */
-
 }
 
-/* Desktop */
-@media only screen and (min-width: 990px) {
-    .container {
-        /* padding-right: 0%; */
+/* Tablet */
+@media screen and (min-width: 769px) and (max-width: 1400px) {
+    /* This will occupied 95% of the screen and keep it centered */
+    h1 {font-size: 24px;}
+    h2 {font-size: 22px;}
+    h3 {font-size: 20px;}
+    h4 {font-size: 18px;}
+    h5 {font-size: 13px;}
+    h6 {font-size: 15px;}
+    h7 {font-size: 12px;}
+    .rwd-break {display: none;}
+    
+    #landing-carousel div div img {
+        height: 769px;    
     }
+ 
 }

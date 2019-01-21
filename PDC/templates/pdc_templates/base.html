@@ -17,6 +17,8 @@
     <link href="https://fonts.googleapis.com/css?family=Fahkwang" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Taviraj" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
 
     <!-- jQuery + Popper come before Bootstrap -->
     <!-- jQuery -->
@@ -41,7 +43,6 @@
     <!-- For gallery animation -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.0/baguetteBox.min.css">
     <link rel="stylesheet" href="{% static "css/fluid-gallery.css" %}">
-
 </head>
 
 <body>
@@ -81,17 +82,17 @@
     <footer class="footer font-small">
         <!-- Copyright -->
         <div class="footer-copyright text-center py-3"><h7 class="white-tx">Designed and built by © 2018 Copyright:</h7>
-            <a href=""><img class="spider" src="{% static "images/spider_logo.png" %}" alt="">&nbsp;<h8 class="white-tx">Spider Inc</h8></a>    
+            <a href=""><img class="spider" src="{% static "images/spider_logo.png" %}" alt="">&nbsp;<h7 class="white-tx">Spider Inc</h7></a>    
         </div>
     </footer>
 
     <!-- Animated gallery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.0/baguetteBox.js"></script>
-    
     <script>
         baguetteBox.run('.tz-gallery',{
             animation: 'fadeIn'
         });
     </script>
+
 </body>
 </html>
