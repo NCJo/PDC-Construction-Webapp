@@ -1,0 +1,111 @@
+{% extends "pdc_templates/base.html" %}
+{% load staticfiles %}
+
+{% block title_block %}
+    Activities
+{% endblock title_block %}
+
+
+{% block body_block %}
+<!-- Card -->
+<div class="padmefromnav"></div>
+<div class="container card text-center col-md-12 shadow-sm">
+	<div class="card-header">
+		<h2 class="pdc-color">ข่าวสารและกิจกรรม</h2>
+    </div>
+    <!-- hi -->
+	<div class="card-body">
+		<div class="row align-self-start col-md-12" id="activities-card">
+			<div class="col-md-6">
+				<div class="card shadow">
+                    <div class="card-body">
+                        <h4 class="card-title">กิจกรรมเลี้ยงอาหารกลางวัน</h4>
+                        <hr>
+                        <h6 class="card-text">เพื่อช่วยเหลือเด็กกำพร้าที่สถานเลี้ยงเด็กกำพร้าอำเภอปากเกร็ด จังหวัดนนทบุรี</h6>
+                        <img class="img-fluid" src="{% static "images/activities/food.jpg" %}" alt="">
+                    </div>
+                </div>
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h4 class="card-title">กิจกรรมจิตอาสา</h4>
+                        <hr>
+                        <h6 class="card-text">บริษัท พี.ดี.ซี. คอนสตรัคชั้น จำกัด ได้นำทีมพนักงานพร้อมทั้งเรือท้องแบน ช่วยกันบริจาคสิ่งของ
+                        ให้กับผู้ประสบอุทกภัยน้ำท่วมที่จังหวัดพระนครศรีอยุธยาเมื่อเดือนตุลาค 2554 และ ที่จังหวัดปราจีนบุรี เมื่อวันที่ 5 ตุลาคม 2556
+                        </h6>
+                        <img class="img-fluid" src="{% static "images/activities/flood.jpg" %}" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body shadow">
+                        <h4 class="card-title">กิจกรรมในวาระวันครบรอบวันคล้ายวันจัดตั้งบริษัทฯ</h4>
+                        <hr>
+                        <h6 class="card-text">ซึ่งจัดเป็นประจำทุกปี โดยจัดทำบุญเลี้ยงพระที่สำนักงาน บริจาคสิ่งของถวายวัดและกิจกรรมจิตอาสา ซึ่งได้ร่วมกันพัฒนาสถานที่ภายในวัดโคนอนมหาสวัสดิ์ให้สะอาดเป็นระเบียบเรียบร้อย ซึ่งทำให้ผู้บริหารและพนักงานต่างมีความสุขใจ
+                        </h6>
+                        <img class="img-fluid" src="{% static "images/activities/cleantemple.jpg" %}" alt="">
+                    </div>
+                </div>
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h4 class="card-title">สัมมนา ณ เสม็ดแอนด์รีสอร์ท เกาะเสม็ด</h4>
+                        <hr>
+                        <img class="img-fluid" src="{% static "images/activities/samed_summit.jpg" %}" alt="">
+                    </div>
+                </div>
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h4 class="card-title">ตรวจสุขภาพเคลื่อนที่สำหรับคนงาน</h4>
+                        <hr>
+                        <img class="img-fluid" src="{% static "images/activities/checkup.jpg" %}" alt="">
+                    </div>
+                </div>
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h4 class="card-title">กิจกรรมติดตั้งเครื่องกรองน้ำดื่ม รร.วัดส้มเกลี้ยง จ.นนทบุรี</h4>
+                        <hr>
+                        <img class="img-fluid" src="{% static "images/activities/schoolwater.jpg" %}" alt="">
+                    </div>
+                </div>
+			</div>
+			<div class="col-md-6">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h4 class="card-title">กิจกรรมสัมมนาภายนอก</h4>
+                        <hr>
+                        <h6 class="card-text">พนักงานทุกคนเข้าร่วมประชุมสัมมนา ณ ไมล์ไฮ เพลเฮ้าส์ เขาใหญ่ เพื่อพัฒนาศักยภาพของพนักงาน</h6>
+                        <img class="img-fluid" src="{% static "images/activities/summit.jpg" %}" alt="">
+                    </div>
+                </div>
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h4 class="card-title">กิจกรรมศูนย์ฝึกอบรมเด็กและเยาวชนสิรินธร</h4>
+                        <hr>
+                        <h6 class="card-text"></h6>
+                        <img class="img-fluid" src="{% static "images/activities/foster1.jpg" %}" alt="">
+                    </div>
+                </div>
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h4 class="card-title">สัมมนาเชิงปฏิบัติการณ์ โรงแรมนนทบุรีพาเลซ และ โรงแรมเดอะริช</h4>
+                        <hr>
+                        <img class="img-fluid" src="{% static "images/activities/summit.jpg" %}" alt="">
+                    </div>
+                </div>
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h4 class="card-title">ฝึกอบรมการดับเพลิงขั้นต้น</h4>
+                        <hr>
+                        <img class="img-fluid" src="{% static "images/activities/firedrill.jpg" %}" alt="">
+                    </div>
+                </div>
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h4 class="card-title">กิจกรรมมูลนิธิชัยพัฒนา</h4>
+                        <hr>
+                        <img class="img-fluid" src="{% static "images/activities/chaipattana.jpg" %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+</div>
+{% endblock body_block %}

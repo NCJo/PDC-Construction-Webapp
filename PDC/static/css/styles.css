@@ -12,7 +12,7 @@
 }
 /* Set transparency of navbar here */
 .white {
-    background-color: rgba(255, 255, 255, 0.7) !important;
+    background-color: rgba(255, 255, 255, 0.9) !important;
 }
 .bg-white {
     background-color: #fff !important;
@@ -187,7 +187,10 @@ body {
     align-items: center;
     flex-wrap: wrap;
 }
-
+#activities-card div div {
+    margin-top: 2px;
+    margin-bottom: 20px;
+}
 /* fade in for gallery */
 .fade-in {
     opacity: 1;
@@ -237,8 +240,8 @@ M E D I A  Q U E R I E S
 
 /* Tablet */
 @media screen and (min-width: 531px) and (max-width: 768px) {
-    h1 {font-size: 24px;}
-    h2 {font-size: 22px;}
+    h1 {font-size: 25px;}
+    h2 {font-size: 23px;}
     h3 {font-size: 20px;}
     h4 {font-size: 18px;}
     h5 {font-size: 13px;}
@@ -253,8 +256,8 @@ M E D I A  Q U E R I E S
 /* Tablet */
 @media screen and (min-width: 769px) and (max-width: 1400px) {
     /* This will occupied 95% of the screen and keep it centered */
-    h1 {font-size: 24px;}
-    h2 {font-size: 22px;}
+    h1 {font-size: 25px;}
+    h2 {font-size: 23px;}
     h3 {font-size: 20px;}
     h4 {font-size: 18px;}
     h5 {font-size: 13px;}

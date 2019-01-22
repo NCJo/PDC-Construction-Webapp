@@ -68,6 +68,8 @@ $(document).ready(function() {
             $('#demo').addClass('col-md-11');
             // Gallery col-md-11 set all
             $('.panel').addClass('col-md-11');
+            // Center profile images of members
+            $('#profile > div > div > div').addClass('text-center');
             
         } else if (ww > 769) {
             // ipad and ipad pro - carousel size
@@ -76,6 +78,8 @@ $(document).ready(function() {
             // Gallery size col-md-5
             $('.panel').removeClass('col-md-11');
             $('.panel').addClass('col-md-7');
+            // Move profile images to the left
+            $('#profile > div > div > div').removeClass('text-center');
             
         }
 
@@ -97,9 +101,6 @@ $(document).ready(function() {
             $('#banner').addClass('padmefromnav');
         }
 
-
-
-        
 
     };
     $(window).resize(function(){

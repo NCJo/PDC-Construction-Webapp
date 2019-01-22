@@ -24,3 +24,9 @@ def yip_gallery(request):
 
 def sangfah_gallery(request):
     return render(request, 'pdc_templates/sangfah.html')
+
+def activities(request):
+    return render(request, 'pdc_templates/activities.html')
+
+def about_us(request):
+    return render(request, 'pdc_templates/about_us.html')
