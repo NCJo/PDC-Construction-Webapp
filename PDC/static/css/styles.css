@@ -38,6 +38,9 @@
 .card-header {
     background-color: white !important;
 }
+#activities-card div div div h4 {
+    color: #2b2a8c;
+}
 
 /* Fonts */
 .fah-font {
