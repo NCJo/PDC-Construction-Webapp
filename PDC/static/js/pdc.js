@@ -25,6 +25,16 @@ $(document).ready(function() {
 });
 // End of Filter script
 
+// Script for flexible footer
+$(document).ready(function() {
+    var indexPage = $("#landing-carousel")
+    console.log(indexPage.length);
+    if (indexPage.length == 0) {
+        $("#only-on-index").hide();
+    }
+});
+
+
 // Remove class
 // TODO: erase shift-right function from logo when screen size is xxxx
 $(document).ready(function() {
@@ -80,7 +90,21 @@ $(document).ready(function() {
             $('.panel').addClass('col-md-7');
             // Move profile images to the left
             $('#profile > div > div > div').removeClass('text-center');
-            
+        }
+
+        if (ww <= 766) {
+            // Remove border line from the map element and add padding
+            $('#map').removeClass("pr-4");
+            $('#map').removeClass("map-border");
+            $('#map').css("padding-right", "0px");
+            $('#company-info').addClass("pl-4");
+            $('#company-info').addClass("pt-3");
+        } else if (ww > 767) {
+            $('#map').addClass("pr-4");
+            $('#map').addClass("map-border");
+            $('#map').css("padding-right", "15px");
+            $('#company-info').removeClass("pl-4");
+            $('#company-info').removeClass("pt-3");
         }
 
         if (ww <= 1240) {

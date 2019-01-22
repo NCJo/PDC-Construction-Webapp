@@ -33,5 +33,6 @@ urlpatterns = [
     path('projects/sangfah/', views.sangfah_gallery, name='sangfah_gallery'),
     path('activities/', views.activities, name='activities'),
     path('about_us/', views.about_us, name='about_us'),
+    path('contact_us/', views.contact_us, name='contact_us'),
     url('pdc_app/', include('pdc_app.urls')),
 ]

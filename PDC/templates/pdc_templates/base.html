@@ -19,6 +19,8 @@
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Taviraj" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sarabun" rel="stylesheet">
 
     <!-- jQuery + Popper come before Bootstrap -->
     <!-- jQuery -->
@@ -60,9 +62,9 @@
             <div class="navbar-nav ml-auto quattro-font">
                 <a class="nav-item nav-link theme-font-color lead" href="{% url 'index' %}">Home <span class="sr-only">(current)</span></a>
                 <a class="nav-item nav-link active theme-font-color lead" href="{% url 'about_us' %}">About Us</a>
-                <a class="nav-item nav-link theme-font-color active lead" href="{% url 'activities' %}">News&Activities</a>
                 <a class="nav-item nav-link theme-font-color active lead" href="{% url 'projects' %}">Projects</a>
-                <a class="nav-item nav-link theme-font-color active lead" href="#">Contact Us</a>
+                <a class="nav-item nav-link theme-font-color active lead" href="{% url 'activities' %}">News&Activities</a>
+                <a class="nav-item nav-link theme-font-color active lead" href="{% url 'contact_us' %}">Contact Us</a>
                 <!-- TODO: Button shows current language -->
                 <!-- TODO: drop down menu selection? -->
                 <!-- <a class="nav-item nav-link active" href="#">TH</a>
@@ -78,13 +80,43 @@
     {% endblock body_block %}
 
     <br>
-    <!-- Footer -->
+        <!-- Footer -->
     <footer class="footer font-small">
         <!-- Copyright -->
+        <div class="container col-md-12 pt-2" id="only-on-index">
+                <div class="row justify-content-center">
+                    <div class= "pr-4 col-md-6 map-border align-self-end text-right" id="footer-map">
+                        <a href="{% url 'index' %}"><h6>Home</h6></a>
+                        <hr width="30%" color="#fff" align="right">
+                        <a href="{% url 'about_us' %}"><h6>About Us</h6></a>
+                        <hr width="30%" color="#fff" align="right">
+                        <a href="{% url 'projects' %}"><h6>Projects</h6></a>
+                        <hr width="30%" color="#fff" align="right">
+                        <a href="{% url 'activities' %}"><h6>News&Activities</h6></a>
+                        <hr width="30%" color="#fff" align="right">
+                        <a href="{% url 'contact_us' %}"><h6>Contact Us</h6></a>
+                    </div>
+                    <div class="pl-4 col-md-6" id="company-info">
+                        <h6>บริษัท พี.ดี.ซี. คอนสตรัคชั่น จำกัด</h6>
+
+                        <h7>ที่อยู่&nbsp;:&nbsp;9/216 ซ.วัดศรีเรืองบุญ ถ.กาญจนาภิเษก หมู่ที่ 7 ตำบลมหาสวัสดิ์ อำเภอบางกรวย จังหวัดนนทบุรี</h7>
+                        <h7>เบอร์โทรศัพท์&nbsp;:&nbsp;02-403-1091</h7>
+                        <h7>เวลาทำการ&nbsp;:&nbsp;8AM-5PM</h7>
+                        <h7>E-mail&nbsp;:&nbsp;No DATA</h7>
+                        <br>
+                        <h6>P.D.C. Construction Co.,LTD</h6>
+                        <h7>Address&nbsp;:&nbsp;9/216, Maha Sawat, Bang Kruai District, Nonthaburi</h7>
+                        <h7>Phone No.&nbsp;:&nbsp;02-403-1091</h7>
+                        <h7>Operation Hours&nbsp;:&nbsp;8AM-5PM</h7>
+                        <h7>E-mail&nbsp;:&nbsp;No DATA</h7>
+                    </div>
+                </div>  
+            </div>
         <div class="footer-copyright text-center py-3"><h7 class="white-tx">Designed and built by © 2018 Copyright:</h7>
             <a href=""><img class="spider" src="{% static "images/spider_logo.png" %}" alt="">&nbsp;<h7 class="white-tx">Spider Inc</h7></a>    
         </div>
     </footer>
+
 
     <!-- Animated gallery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.0/baguetteBox.js"></script>

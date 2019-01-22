@@ -30,3 +30,6 @@ def activities(request):
 
 def about_us(request):
     return render(request, 'pdc_templates/about_us.html')
+
+def contact_us(request):
+    return render(request, 'pdc_templates/contact_us.html')
