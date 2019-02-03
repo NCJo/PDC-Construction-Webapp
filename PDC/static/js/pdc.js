@@ -56,11 +56,11 @@ $(document).ready(function() {
         
         if (ww < 1030) {
             // Get rid of max-height, min-width
-            $('div.carousel-item > img').css({"max-height":"none", "min-width":"auto"});
+            // $('div.carousel-item > img').css({"max-height":"none", "min-width":"auto"});
             // adjust button size
             $(".btn").addClass("btn-sm")
         } else if (ww >= 1031) {
-            $('div.carousel-item > img').css({"max-height":"726px", "min-width":"auto"});
+            // $('div.carousel-item > img').css({"max-height":"726px", "min-width":"auto"});
             // adjust button size to large
             $(".btn").removeClass("btn-sm")
             // $('.carousel-inner').addClass('col-md-7');

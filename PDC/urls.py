@@ -24,6 +24,7 @@ from django.conf.urls import url
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('accounts/', include('django.contrib.auth.urls')),
     path('', views.index, name='index'),
     path('projects/', views.projects, name='projects'),
     path('projects/samed/', views.samed_gallery, name='samed_gallery'),

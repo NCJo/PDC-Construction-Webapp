@@ -26,9 +26,14 @@
 .pdc-color {
     color: #2b2a8c;
 }
+.pdc-red-color {
+    color: #F01A22
+}
 .grey {
     background-color: rgba(19, 60, 85, 0.2) !important;
 }
+/* END OF COLORS */
+
 /* These are necessary for footer to stick to bottom */
 .footer {
     width: 100%;
@@ -60,8 +65,8 @@
 .taviraj-font {
     font-family: 'Taviraj', serif;
 }
-h1, h2, h3, h4, h5, h6, h7 {
-    font-family: 'Trirong', serif !important;
+h1, h2, h3, h4, h5, h6, h7, p {
+    font-family: 'Krub', sans-serif !important;
 }
 #navbarNavDropdown div a {
     font-family: 'Merriweather', serif;
@@ -81,14 +86,23 @@ body {
     background-color: rgba(93, 95, 102, 0.1) !important;
 }
 
-/* Carousels */
-#demo {
-    /* background-color: black !important; */
+/* Index Page */
+.card-header {
+    /* border-bottom: 1px solid rgba(240, 26, 34, 0.5) !important; */
+    border-bottom: 2px solid rgba(185, 164, 76, 1) !important;
 }
 
-#landing-carousel div div img {
-    height: 853px;    
+.btn-primary {
+    background-color: rgba(58, 74, 110, 1) !important;
+    border-color: rgba(58, 74, 110, 1) !important;
+    color: rgba(254, 244, 196, 1) !important;
 }
+
+/* Carousels */
+.carousel-inner img {
+    margin: auto;
+}
+
 
 /* force size on images on carousel */
 #demo div div img {
@@ -256,9 +270,6 @@ M E D I A  Q U E R I E S
     #pdc_logo {
         width: 95%;
     }
-    #landing-carousel div div img {
-        height: 300px;    
-    }
 }
 
 /* Tablet */
@@ -271,9 +282,6 @@ M E D I A  Q U E R I E S
     h6 {font-size: 13px;}
     h7 {font-size: 12px;}
     .rwd-break {display: none;}
-    #landing-carousel div div img {
-        height: 531px;    
-    }
 
 }
 
@@ -289,8 +297,5 @@ M E D I A  Q U E R I E S
     h7 {font-size: 12px;}
     .rwd-break {display: none;}
     
-    #landing-carousel div div img {
-        height: 769px;    
-    }
  
 }
