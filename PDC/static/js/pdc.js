@@ -63,7 +63,7 @@ $(document).ready(function () {
 // Hide the page until completely loaded
 $(window).on('load', function() {
     // Animate loader off screen
-    $("#cover").fadeOut("slow");;
+    $("#cover").fadeOut(800);;
 });
 
 

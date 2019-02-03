@@ -100,7 +100,7 @@ body {
     /* background-color: rgba(20, 42, 140, 0.4) !important; */
     background-color: rgba(93, 95, 102, 0.1) !important;
 }
-/* Hiding function */
+/* Hiding page function */
 .no-js #loader { display: none;  }
 .js #loader { display: block; position: absolute; left: 100px; top: 0; }
 #cover {
