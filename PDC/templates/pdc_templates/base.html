@@ -24,6 +24,7 @@
     <link href="https://fonts.googleapis.com/css?family=Trirong" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Krub" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Sriracha" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
 
     <!-- jQuery + Popper come before Bootstrap -->
     <!-- jQuery -->
@@ -53,7 +54,7 @@
 
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top white">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top white" id="navbar">
         <a style="text-decoration:none;" class="nav-brand mb-0 h4 fah-font" href="{% url 'index' %}">
             <img id="pdc_logo"  src="{% static "images/pdc_logo_enth.png" %}" height="130" class="d-inline-block align-middle shift-right" alt="">
         </a>
@@ -64,11 +65,11 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <!-- ml-auto align the div to the right side -->
             <div class="navbar-nav ml-auto quattro-font">
-                <a class="nav-item nav-link theme-font-color lead" href="{% url 'index' %}">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link active theme-font-color lead" href="{% url 'about_us' %}">About Us</a>
-                <a class="nav-item nav-link theme-font-color active lead" href="{% url 'projects' %}">Projects</a>
-                <a class="nav-item nav-link theme-font-color active lead" href="{% url 'activities' %}">News & Activities</a>
-                <a class="nav-item nav-link theme-font-color active lead" href="{% url 'contact_us' %}">Contact Us</a>
+                <a class="nav-item nav-link theme-font-color lead cabin-font" href="{% url 'index' %}">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link active theme-font-color lead cabin-font" href="{% url 'about_us' %}">About Us</a>
+                <a class="nav-item nav-link theme-font-color active lead cabin-font" href="{% url 'projects' %}">Projects</a>
+                <a class="nav-item nav-link theme-font-color active lead cabin-font" href="{% url 'activities' %}">News & Activities</a>
+                <a class="nav-item nav-link theme-font-color active lead cabin-font" href="{% url 'contact_us' %}">Contact Us</a>
                 <!-- TODO: Button shows current language -->
                 <!-- TODO: drop down menu selection? -->
                 <!-- <a class="nav-item nav-link active" href="#">TH</a>
@@ -90,15 +91,15 @@
         <div class="container col-md-12 pt-2" id="only-on-index">
                 <div class="row justify-content-center">
                     <div class= "pr-4 col-md-6 map-border align-self-end text-right" id="footer-map">
-                        <a href="{% url 'index' %}"><h6>Home</h6></a>
+                        <a href="{% url 'index' %}"><h6 class="cabin-font">Home</h6></a>
                         <hr width="30%" color="#fff" align="right">
-                        <a href="{% url 'about_us' %}"><h6>About Us</h6></a>
+                        <a href="{% url 'about_us' %}"><h6 class="cabin-font">About Us</h6></a>
                         <hr width="30%" color="#fff" align="right">
-                        <a href="{% url 'projects' %}"><h6>Projects</h6></a>
+                        <a href="{% url 'projects' %}"><h6 class="cabin-font">Projects</h6></a>
                         <hr width="30%" color="#fff" align="right">
-                        <a href="{% url 'activities' %}"><h6>News&Activities</h6></a>
+                        <a href="{% url 'activities' %}"><h6 class="cabin-font">News&Activities</h6></a>
                         <hr width="30%" color="#fff" align="right">
-                        <a href="{% url 'contact_us' %}"><h6>Contact Us</h6></a>
+                        <a href="{% url 'contact_us' %}"><h6 class="cabin-font">Contact Us</h6></a>
                     </div>
                     <div class="pl-4 col-md-6" id="company-info">
                         <h6>บริษัท พี.ดี.ซี. คอนสตรัคชั่น จำกัด</h6>
@@ -116,7 +117,7 @@
                     </div>
                 </div>  
             </div>
-        <div class="footer-copyright text-center py-3"><h7 class="white-tx">Designed and built by © 2018 Copyright:</h7>
+        <div class="footer-copyright text-center py-3"><h7 class="white-tx">Designed and built by © 2018-19 Copyright:</h7>
             <a href=""><img class="spider" src="{% static "images/spider_logo.png" %}" alt="">&nbsp;<h7 class="white-tx">Spider Inc</h7></a>    
         </div>
     </footer>
