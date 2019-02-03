@@ -36,17 +36,35 @@ $(document).ready(function() {
 // End of Flexible Footer
 
 // Scroll down to hide navbar
-var originScrollPos = window.pageYOffset;
-window.onscroll = function() {
-    var currentScrollPos = window.pageYOffset;
-    if (originScrollPos > currentScrollPos) {
-        document.getElementById("navbar").style.top= "0";
-    } else {
-        document.getElementById("navbar").style.top = "-200px";
-    }
-    originScrollPos = currentScrollPos;
-}
+$(document).ready(function () {
+  
+    'use strict';
+    
+     var c, currentScrollTop = 0,
+         navbar = $('#navbar');
+  
+     $(window).scroll(function () {
+        var a = $(window).scrollTop();
+        var b = $('#navbar').height();
+       
+        currentScrollTop = a;
+       
+        if (c < currentScrollTop && a > b + b) {
+            $('#navbar').css("transform", "translateY(-200px)");
+        } else if (c > currentScrollTop && !(a <= b)) {
+            $('#navbar').css("transform", "");
+        }
+        c = currentScrollTop;
+    });
+    
+  });
 // END OF SCROLL TO HIDE NAVBAR
+
+// Hide the page until completely loaded
+$(window).on('load', function() {
+    // Animate loader off screen
+    $("#cover").fadeOut("slow");;
+});
 
 
 // Remove class

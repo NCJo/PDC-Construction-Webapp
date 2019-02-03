@@ -50,9 +50,14 @@
     <!-- For gallery animation -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.0/baguetteBox.min.css">
     <link rel="stylesheet" href="{% static "css/fluid-gallery.css" %}">
+
+    <!-- For hiding page -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 </head>
 
 <body>
+    <div id="cover">
+    </div>
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top white" id="navbar">
         <a style="text-decoration:none;" class="nav-brand mb-0 h4 fah-font" href="{% url 'index' %}">
@@ -104,13 +109,13 @@
                     <div class="pl-4 col-md-6" id="company-info">
                         <h6>บริษัท พี.ดี.ซี. คอนสตรัคชั่น จำกัด</h6>
 
-                        <h7>ที่อยู่&nbsp;:&nbsp;9/216 ซ.วัดศรีเรืองบุญ ถ.กาญจนาภิเษก หมู่ที่ 7 ตำบลมหาสวัสดิ์ อำเภอบางกรวย จังหวัดนนทบุรี</h7>
+                        <h7>ที่อยู่&nbsp;:&nbsp;9/216 ซ.วัดศรีเรืองบุญ ถ.กาญจนาภิเษก หมู่ที่ 7 ตำบลมหาสวัสดิ์ อำเภอบางกรวย จังหวัดนนทบุรี 11130</h7>
                         <h7>เบอร์โทรศัพท์&nbsp;:&nbsp;02-403-1091</h7>
                         <h7>เวลาทำการ&nbsp;:&nbsp;8AM-5PM</h7>
                         <h7>E-mail&nbsp;:&nbsp;No DATA</h7>
                         <br>
                         <h6>P.D.C. Construction Co.,LTD</h6>
-                        <h7>Address&nbsp;:&nbsp;9/216, Maha Sawat, Bang Kruai District, Nonthaburi</h7>
+                        <h7>Address&nbsp;:&nbsp;9/216 Soi Watsrireungboon, Kanjanapisek Road, Moo.7 Mahasawat Bangkrui Nonthaburi 11130</h7>
                         <h7>Phone No.&nbsp;:&nbsp;02-403-1091</h7>
                         <h7>Operation Hours&nbsp;:&nbsp;8AM-5PM</h7>
                         <h7>E-mail&nbsp;:&nbsp;No DATA</h7>
@@ -130,6 +135,5 @@
             animation: 'fadeIn'
         });
     </script>
-
 </body>
 </html>

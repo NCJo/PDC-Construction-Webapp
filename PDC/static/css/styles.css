@@ -87,7 +87,8 @@ h1, h2, h3, h4, h5, h6, h7, p {
     line-height: 50px;
 }
 #navbar {
-    transition: top 0.3s;
+    transition: all 0.5s;
+    z-index: 9998;
 }
 /* END OF NAVBAR */
 
@@ -98,6 +99,18 @@ body {
     /* background-color: #E8F1F2 !important; */
     /* background-color: rgba(20, 42, 140, 0.4) !important; */
     background-color: rgba(93, 95, 102, 0.1) !important;
+}
+/* Hiding function */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+#cover {
+    position: fixed;
+    left: 0px;
+    top: 0px ;
+    height: 100%; 
+    width: 100%;   
+    z-index: 9999;
+    background: url("../images/200.gif") center no-repeat #fff
 }
 
 hr {
