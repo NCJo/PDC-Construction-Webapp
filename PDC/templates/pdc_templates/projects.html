@@ -9,8 +9,8 @@
 {% block body_block %}
 <!-- Jumbotron -->
 <div class="jumbotron container col-md-11 vertical-center img-responsive">
-      <div class="container col-md-8 bottomme text-center border border-dark rounded blurme">
-        <h4 class="row">Our journey started from 1998. We take on many challenging projects such as, warehouses, cargo port, dikes, water treatment facilities, concrete-reinforced infrastructures. We did every project we takes on with quality and integrity as our core values.</h4>
+      <div class="container col-md-8 bottomme text-center rounded blurme">
+        <h4 class="row"><strong>Our journey started from 1998. We take on many challenging projects such as, warehouses, cargo port, dikes, water treatment facilities, concrete-reinforced infrastructures. We approach every projects with quality and integrity as our core values.</strong></h4>
       </div>
 </div>
 
@@ -33,15 +33,15 @@
 <div class="container grey rounded my-auto panel shadow-sm" id="project1">
     <div class="row">
         <div class="col order-first my-auto">
-            <a href="{% url 'samed_gallery' %}"><img class="img-thumbnail " src="{% static "images/samed_island/si04.jpg" %}" alt=""></a>
+            <a href="{% url 'samed_gallery' %}"><img class="img-thumbnail " src="{% static "images/projects/si04_proj.jpg" %}" alt=""></a>
         </div>
         <div class="col order-last my-auto">
           <br>
-          <h4 class="font-weight-bold">ท่าเรือเกาะเสม็ด</h4>
-          <h6>เจ้าของโครงการ&nbsp;:&nbsp;&nbsp;&nbsp;องค์การบริหารส่วนจังหวัดระยอง</h6>
+          <h3 class="font-weight-bold">ท่าเรือเกาะเสม็ด</h3>
+          <h5>เจ้าของโครงการ&nbsp;:&nbsp;&nbsp;&nbsp;องค์การบริหารส่วนจังหวัดระยอง</h5>
           <br class="rwd-break">
-          <h5>Samed Port</h4>
-          <h7>Client&nbsp;:&nbsp;&nbsp;&nbsp;City of Rayong</h6>
+          <h5><strong>Samed Port</strong></h5>
+          <h6>Client&nbsp;:&nbsp;&nbsp;&nbsp;City of Rayong</h6>
           <hr class="" size="3">
           <a href="{% url 'samed_gallery' %}" class="btn btn-primary" role="button" aria-disabled="true">Read More</button></a>
           <div class="panel-footer tag padmetop">
@@ -58,16 +58,16 @@
 <div class="container bg-white rounded my-auto panel shadow-sm" id="project2">
     <div class="row">
         <div class="col order-first my-auto">
-            <a href="{% url 'cp_gallery' %}"><img class="img-thumbnail " src="{% static "images/cp_warehouse/cp02.jpg" %}" alt=""></a>
+            <a href="{% url 'cp_gallery' %}"><img class="img-thumbnail " src="{% static "images/projects/cp02_proj.jpg" %}" alt=""></a>
         </div>
         <div class="col order-last my-auto">
           <br>
-          <h4 class="font-weight-bold">NO DATA</h4>
-          <h6>เจ้าของโครงการ&nbsp;:&nbsp;&nbsp;&nbsp;NO DATA</h6>
-          <br>
-          <h5>NO DATA CP Crane Infrastructure</h4>
-          <h7>Client&nbsp;:&nbsp;&nbsp;&nbsp;City of Rayong</h6>
-          <hr class="" size="5">
+          <h3 class="font-weight-bold">ซีพี</h3>
+          <h5>เจ้าของโครงการ&nbsp;:&nbsp;&nbsp;&nbsp;NO DATA</h5>
+          <br class="rwd-break">
+          <h5>NO DATA CP Crane Infrastructure</h5>
+          <h6>Client&nbsp;:&nbsp;&nbsp;&nbsp;NO DATA</h6>
+          <hr class="" size="3">
           <a href="{% url 'cp_gallery' %}" class="btn btn-primary" role="button" aria-disabled="true">Read More</button></a>
           <div class="panel-footer tag padmetop">
               <span class="badge badge-secondary label label-primary hidden">All</span>
@@ -83,22 +83,22 @@
 <div class="container my-auto panel grey rounded shadow-sm" id="project3">
     <div class="row">
         <div class="col order-first my-auto">
-            <a href="{% url 'yip_gallery' %}"><img class="img-thumbnail " src="{% static "images/yipinsoi_factory/ys02.jpg" %}" alt=""></a>
+            <a href="{% url 'yip_gallery' %}"><img class="img-thumbnail " src="{% static "images/projects/ys01_proj.jpg" %}" alt=""></a>
         </div>
         <div class="col order-last my-auto">
           <br>
-          <h4 class="font-weight-bold">โรงงานผลิตปุ๋ย</h4>
-          <h6>เจ้าของโครงการ&nbsp;:&nbsp;&nbsp;&nbsp;บริษัทยิบอินซอยและแยคส์จำกัด</h6>
-          <br>
-          <h5>Fertilizer Production Building</h4>
-          <h7>Client&nbsp;:&nbsp;&nbsp;&nbsp;Yip-In-Soil and Yak CO.,LTD.</h6>
-          <hr class="" size="5">
+          <h3 class="font-weight-bold">โรงงานผลิตปุ๋ย</h3>
+          <h5>เจ้าของโครงการ&nbsp;:&nbsp;&nbsp;&nbsp;บริษัทยิบอินซอยและแยคส์จำกัด</h5>
+          <br class="rwd-break">
+          <h5>Fertilizer Production Building</h5>
+          <h6>Client&nbsp;:&nbsp;&nbsp;&nbsp;Yip-In-Soil and Yak CO.,LTD.</h6>
+          <hr class="" size="3">
           <a href="{% url 'yip_gallery' %}"class="btn btn-primary btn" role="button" aria-disabled="true">Read More</button></a>
           <div class="panel-footer tag padmetop">
               <span class="badge badge-secondary label label-primary hidden">All</span>
               <span class="badge badge-secondary label label-primary">Infrastructure</span>
           </div>
-          <br>
+          <br>          
         </div>
     </div>
 </div>
@@ -108,16 +108,16 @@
 <div class="container bg-white rounded my-auto panel shadow-sm" id="project4">
     <div class="row">
         <div class="col order-first my-auto">
-            <a href="{% url 'ptb_gallery' %}"><img class="img-thumbnail " src="{% static "images/ptb_warehouse/pw01.jpg" %}" alt=""></a>
+            <a href="{% url 'ptb_gallery' %}"><img class="img-thumbnail " src="{% static "images/projects/pw02_proj.jpg" %}" alt=""></a>
         </div>
         <div class="col order-last my-auto">
           <br>
-          <h4 class="font-weight-bold">NO DATA</h4>
-          <h6>เจ้าของโครงการ&nbsp;:&nbsp;&nbsp;&nbsp;NO DATA</h6>
-          <br>
-          <h5>NO DATA - PTB</h4>
-          <h7>Client&nbsp;:&nbsp;&nbsp;&nbsp;NO DATA</h6>
-          <hr class="" size="5">
+          <h3 class="font-weight-bold">NO DATA</h3>
+          <h5>เจ้าของโครงการ&nbsp;:&nbsp;&nbsp;&nbsp;NO DATA</h5>
+          <br class="rwd-break">
+          <h5>NO DATA - PTB</h5>
+          <h6>Client&nbsp;:&nbsp;&nbsp;&nbsp;NO DATA</h6>
+          <hr class="" size="3">
           <a href="{% url 'ptb_gallery' %}" class="btn btn-primary btn" role="button" aria-disabled="true">Read More</button></a>
           <div class="panel-footer tag padmetop">
               <span class="badge badge-secondary label label-primary hidden">All</span>
@@ -133,23 +133,23 @@
 <div class="container grey  rounded my-auto panel shadow-sm" id="project5">
     <div class="row">
         <div class="col order-first my-auto">
-            <a href="{% url 'sangfah_gallery' %}"><img class="img-thumbnail " src="{% static "images/sangfah_port/sf03.jpg" %}" alt=""></a>
+            <a href="{% url 'sangfah_gallery' %}"><img class="img-thumbnail " src="{% static "images/projects/sf03_proj.jpg" %}" alt=""></a>
         </div>
         <div class="col order-last my-auto">
           <br>
-          <h4 class="font-weight-bold">ก่อสร้างโครงการ Packing Building 2</h4>
-          <h6>เจ้าของโครงการ&nbsp;:&nbsp;&nbsp;&nbsp;บริษัทแสงฟ้าอะกริโปรดักส์จำกัด</h6>
-          <br>
-          <h5>Packing Building</h4>
-          <h7>Client&nbsp;:&nbsp;&nbsp;&nbsp;Sangfah Agri Product CO.,LTD.</h6>
-          <hr class="" size="5">
+          <h3 class="font-weight-bold">ก่อสร้างโครงการ Packing Building 2</h3>
+          <h5>เจ้าของโครงการ&nbsp;:&nbsp;&nbsp;&nbsp;บริษัทแสงฟ้าอะกริโปรดักส์จำกัด</h5>
+          <br class="rwd-break">
+          <h>Packing Building</h5>
+          <h6>Client&nbsp;:&nbsp;&nbsp;&nbsp;Sangfah Agri Product CO.,LTD.</h6>
+          <hr class="" size="3">
           <a href="{% url 'sangfah_gallery' %}"class="btn btn-primary btn" role="button" aria-disabled="true">Read More</button></a> 
           <div class="panel-footer tag padmetop">
               <span class="badge badge-secondary label label-primary hidden">All</span>
               <span class="badge badge-secondary label label-primary">Office</span>
           </div>
-          <br>
         </div>
+        <br>
     </div>
 </div>
 <br>
