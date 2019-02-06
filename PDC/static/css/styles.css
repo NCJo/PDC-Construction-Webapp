@@ -5,8 +5,10 @@ body {
     /* gap between first content and navbar */
     /* padding-top: 120px; */
     /* background-color: #E8F1F2 !important; */
-    /* background-color: rgba(20, 42, 140, 0.4) !important; */
-    background-color: rgba(93, 95, 102, 0.1) !important;
+    background-color: rgba(20, 68, 140, 0.2) !important;
+    /* background-color: rgba(93, 95, 102, 0.1) !important; */
+    /* background-color: rgba(43, 43, 94, 0.9) !important; */
+
 }
 h1, h2, h3, h4, h5, h6, h7, p {
     /* font-family: 'Krub', sans-serif !important; */
