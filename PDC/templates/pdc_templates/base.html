@@ -56,8 +56,9 @@
 </head>
 
 <body>
-    <!-- <div id="cover">
-    </div> -->
+    <!-- Waiting for page to load completely -->
+    <div id="cover">
+    </div>
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top white" id="navbar">
         <a style="text-decoration:none;" class="nav-brand mb-0 h4 fah-font" href="{% url 'index' %}">
@@ -75,6 +76,14 @@
                 <a class="nav-item nav-link theme-font-color active lead cabin-font" href="{% url 'projects' %}">Projects</a>
                 <a class="nav-item nav-link theme-font-color active lead cabin-font" href="{% url 'activities' %}">News & Activities</a>
                 <a class="nav-item nav-link theme-font-color active lead cabin-font" href="{% url 'contact_us' %}">Contact Us</a>
+                <a class="nav-item nav-link lead cabin-font small" href="{% url 'logout' %}">
+                    {% if user.is_authenticated %}
+                        Hi {{ user.username }} ! Click to Logout 
+                    {% else %}
+                        <p>You are not logged in</p>
+                        <a href="{% url 'login' %}">login</a>
+                    {% endif %}
+                <span class="sr-only">(current)</span></a>
                 <!-- TODO: Button shows current language -->
                 <!-- TODO: drop down menu selection? -->
                 <!-- <a class="nav-item nav-link active" href="#">TH</a>

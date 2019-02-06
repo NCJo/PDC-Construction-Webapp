@@ -1,4 +1,36 @@
-/* Debug colors */
+/* +++++++++++++++++++++++++++++++++++++++++++ */
+/* GENERAL SECTION */
+/* +++++++++++++++++++++++++++++++++++++++++++ */
+body {
+    /* gap between first content and navbar */
+    /* padding-top: 120px; */
+    /* background-color: #E8F1F2 !important; */
+    /* background-color: rgba(20, 42, 140, 0.4) !important; */
+    background-color: rgba(93, 95, 102, 0.1) !important;
+}
+h1, h2, h3, h4, h5, h6, h7, p {
+    /* font-family: 'Krub', sans-serif !important; */
+    font-family: 'Sarabun', sans-serif !important;
+}
+.text-center {
+    text-align: center !important;
+}
+/* Fix weird white space on the right side from Bootstrap */
+.row {
+    padding-right: 0px;
+    margin-right: 0px;
+}
+/* Height between each line */
+p, h1, h2, h3, h4, h5, h6, h7 {
+    line-height: 2 !important;
+}
+/* +++++++++++++++++++++++++++++++++++++++++++ */
+/* END OF GENERAL SECTION */
+/* +++++++++++++++++++++++++++++++++++++++++++ */
+
+/* +++++++++++++++++++++++++++++++++++++++++++ */
+/* COLORS SECTION */
+/* +++++++++++++++++++++++++++++++++++++++++++ */
 .main-theme-color {
     /* background-color: #143c55 !important; */
     background-color: rgba(93, 95, 102, 0.2)
@@ -32,30 +64,14 @@
 .grey {
     background-color: rgba(19, 60, 85, 0.2) !important;
 }
-/* END OF COLORS */
+/* +++++++++++++++++++++++++++++++++++++++++++ */
+/* END OF COLORS SECTION*/
+/* +++++++++++++++++++++++++++++++++++++++++++ */
 
-/* These are necessary for footer to stick to bottom */
-.footer {
-    width: 100%;
-    background-color: rgba(20, 42, 140, 1) !important;
-}
-#landing-carousel {
-    /* background-color: #434449 !important; */
-}
-.card-header {
-    background-color: white !important;
-}
-#activities-card div div div h4 {
-    color: #2b2a8c;
-}
-#only-on-index {
-    color: #e8f1f2 !important;
-}
-#footer-map a {
-    color: #fff
-}
 
-/* FONTS */
+/* +++++++++++++++++++++++++++++++++++++++++++ */
+/* FONTS SECTION*/
+/* +++++++++++++++++++++++++++++++++++++++++++ */
 .fah-font {
     font-family: 'Fahkwang', sans-serif;
 }
@@ -71,17 +87,18 @@
 .cabin-font {
     font-family: 'Cabin', sans-serif !important;
 }
+/* +++++++++++++++++++++++++++++++++++++++++++ */
+/* END OF FONTS SECTION*/
+/* +++++++++++++++++++++++++++++++++++++++++++ */
 
-h1, h2, h3, h4, h5, h6, h7, p {
-    /* font-family: 'Krub', sans-serif !important; */
-    font-family: 'Sarabun', sans-serif !important;
-}
+
+/* +++++++++++++++++++++++++++++++++++++++++++ */
+/* NAVBAR SECTION */
+/* +++++++++++++++++++++++++++++++++++++++++++ */
 #navbarNavDropdown div a {
     font-family: 'Merriweather', serif;
 }
-/* END OF FONTS */
 
-/* NAVBAR */
 /* fixed alignment of Company name and logo */
 .nav-brand {
     line-height: 50px;
@@ -89,16 +106,6 @@ h1, h2, h3, h4, h5, h6, h7, p {
 #navbar {
     transition: all 0.5s;
     z-index: 9998;
-}
-/* END OF NAVBAR */
-
-     
-body {
-    /* gap between first content and navbar */
-    /* padding-top: 120px; */
-    /* background-color: #E8F1F2 !important; */
-    /* background-color: rgba(20, 42, 140, 0.4) !important; */
-    background-color: rgba(93, 95, 102, 0.1) !important;
 }
 /* Hiding page function */
 .no-js #loader { display: none;  }
@@ -112,31 +119,77 @@ body {
     z-index: 9999;
     background: url("../images/200.gif") center no-repeat #fff
 }
-
-hr {
-    border-top: 1px solid rgba(185, 164, 76, 1) !important;
+.shift-right {
+    padding-left: 85px;
 }
-/* Index Page */
+/* +++++++++++++++++++++++++++++++++++++++++++ */
+/* END OF NAVBAR SECTION */
+/* +++++++++++++++++++++++++++++++++++++++++++ */
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++ */
+/* LANDING PAGE SECTION */
+/* +++++++++++++++++++++++++++++++++++++++++++ */
+
+#landing-carousel {
+    /* background-color: #434449 !important; */
+}
+.card-header {
+    background-color: white !important;
+}
+#activities-card div div div h4 {
+    color: #2b2a8c;
+}
+#only-on-index {
+    color: #e8f1f2 !important;
+}
 .card-header {
     /* border-bottom: 1px solid rgba(240, 26, 34, 0.5) !important; */
     border-bottom: 2px solid rgba(185, 164, 76, 1) !important;
 }
-
+hr {
+    border-top: 1px solid rgba(185, 164, 76, 1) !important;
+}
 .btn-primary {
     background-color: rgba(58, 74, 110, 1) !important;
     border-color: rgba(58, 74, 110, 1) !important;
     color: rgba(254, 244, 196, 1) !important;
 }
-
-/* Carousels */
 /* Makes them responsive */
 .carousel-inner img {
     margin: auto;
 }
+/* +++++++++++++++++++++++++++++++++++++++++++ */
+/* END OF LANDING PAGE SECTION */
+/* +++++++++++++++++++++++++++++++++++++++++++ */
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++ */
+/* PROJECTS GALLERY PAGE SECTION */
+/* +++++++++++++++++++++++++++++++++++++++++++ */
+.padmetop {
+    padding-top: 0.2em;
+}
+/* For hiding 'All' tag filter */
+.hidden {
+    display: none;
+/* .row {
+    margin: 30px 0;
+  }*/
+}
+/* Hero in the middle */
+.vertical-center {
+    min-height: 100%;
+    min-height: 100vh;
+
+    display:flex;
+    align-items: center;
+}
+/* Carousels */
+/* Makes them responsive */
 #demo img {
     margin: auto;
 }
-
 /* makes jumbotron responsive */
 .jumbotron {
     background: url("../images/yipinsoi_factory/ys03.jpg") no-repeat center;
@@ -146,18 +199,11 @@ hr {
     border: 1px;
     padding: 0 !important;
 }
-
-/* obsolete */
+.blurme {
+    background-color: rgba(243, 243, 243, 0.4) !important;
+}
 /* use this: https://stackoverflow.com/questions/42252443/vertical-align-center-in-bootstrap-4 */
 /* center text in jumbotron (might work for other) */
-.centerme {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-
-/* PROJECTS PAGE */
 /* put element at the bottom floating at X% from top */
 .bottomme {
     position: absolute;
@@ -166,32 +212,26 @@ hr {
     transform: translate(-50%, -50%);
 }
 .padmefromnav {
-    padding-top: 146px;
+    padding-top: 136px;
 }
 .padmefromnav-sm {
     padding-top: 185px;
 }
-.blurme {
-    background-color: rgba(243, 243, 243, 0.4) !important;
-}
-.shift-right {
-    padding-left: 85px;
-}
+/* +++++++++++++++++++++++++++++++++++++++++++ */
+/* END OF PROJECTS GALLERY PAGE SECTION */
+/* +++++++++++++++++++++++++++++++++++++++++++ */
 
-/* Hero in the middle */
-.vertical-center {
-    min-height: 100%;
-    min-height: 100vh;
 
-    display:flex;
-    align-items: center;
+/* +++++++++++++++++++++++++++++++++++++++++++ */
+/* EACH PROJECT PAGE SECTION */
+/* +++++++++++++++++++++++++++++++++++++++++++ */
+.padmefrombanner {
+    padding-top: 30px;
 }
-
-.spider {
-    height: 45px;
-    width: auto;
+.padmebit {
+    padding-top: -60px;
+    padding-bottom: 40px;
 }
-
 .imgheader {
     position: relative;
 }
@@ -199,49 +239,6 @@ hr {
     width: 100%;
     height: auto;
     vertical-align: middle;
-}
-.text-center {
-    text-align: center !important;
-}
-
-.padmebit {
-    padding-top: -60px;
-    padding-bottom: 40px;
-}
-.padmetop {
-    padding-top: 0.2em;
-}
-.padmefrombanner {
-    padding-top: 30px;
-}
-
-/* For hiding 'All' tag filter */
-.hidden {
-    display: none;
-/* .row {
-    margin: 30px 0;
-  }*/
-}
-
-/* Fix weird white space on the right side from Bootstrap */
-.row {
-    padding-right: 0px;
-    margin-right: 0px;
-}
-
-/* This is for get rid of padding on the right */
-.no-right-pad {
-    padding-right: 0px !important;
-}
-
-.img-align-c {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
-#activities-card div div {
-    margin-top: 2px;
-    margin-bottom: 20px;
 }
 /* fade in for gallery */
 .fade-in {
@@ -259,24 +256,137 @@ hr {
         opacity: 1;
     }
 }
+/* +++++++++++++++++++++++++++++++++++++++++++ */
+/* END OF PROJECTS PAGE SECTION */
+/* +++++++++++++++++++++++++++++++++++++++++++ */
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++ */
+/* JS PAGE SECTION */
+/* +++++++++++++++++++++++++++++++++++++++++++ */
+/* This is for get rid of padding on the right */
+.no-right-pad {
+    padding-right: 0px !important;
+}
+/* +++++++++++++++++++++++++++++++++++++++++++ */
+/* END OF JS PAGE SECTION */
+/* +++++++++++++++++++++++++++++++++++++++++++ */
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++ */
+/* NEWS & ACTIVITIES PAGE SECTION */
+/* +++++++++++++++++++++++++++++++++++++++++++ */
+#activities-card div div {
+    margin-top: 2px;
+    margin-bottom: 20px;
+}
 .map-border {
     border-right: 1px solid #F01A22 !important;
 }
-/* Height between each line */
-p, h1, h2, h3, h4, h5, h6, h7 {
-    line-height: 2 !important;
-}
+/* +++++++++++++++++++++++++++++++++++++++++++ */
+/* END OF NEWS & ACTIVITIES PAGE SECTION */
+/* +++++++++++++++++++++++++++++++++++++++++++ */
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++ */
+/* FOOTER SECTION */
+/* +++++++++++++++++++++++++++++++++++++++++++ */
 #footer-map hr {
     margin-top: 6px;
     margin-bottom: 6px;
 }
+.spider {
+    height: 45px;
+    width: auto;
+}
+/* These are necessary for footer to stick to bottom */
+.footer {
+    width: 100%;
+    background-color: rgba(20, 42, 140, 1) !important;
+}
+#footer-map a {
+    color: #fff
+}
+/* +++++++++++++++++++++++++++++++++++++++++++ */
+/* END OF FOOTER SECTION */
+/* +++++++++++++++++++++++++++++++++++++++++++ */
 
 
-/*
-####################################################
-M E D I A  Q U E R I E S
-####################################################
-*/
+/* +++++++++++++++++++++++++++++++++++++++++++ */
+/* LOG IN SECTION */
+/* +++++++++++++++++++++++++++++++++++++++++++ */
+.user_card {
+    height: 400px;
+    width: 350px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background: rgba(20, 42, 140, 0.4);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+
+}
+.brand_logo_container {
+    position: absolute;
+    height: 170px;
+    width: 170px;
+    top: -75px;
+    border-radius: 50%;
+    background: #5C9EAD;
+    padding: 10px;
+    text-align: center;
+}
+.brand_logo {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+.form_container {
+    margin-top: 100px;
+}
+.login_btn {
+    width: 100%;
+    background: #931621 !important;
+    color: white !important;
+}
+.login_btn:focus {
+    box-shadow: none !important;
+    outline: 0px !important;
+}
+.login_container {
+    padding: 0 2rem;
+}
+.input-group-text {
+    background: #c0392b !important;
+    color: white !important;
+    border: 0 !important;
+    border-radius: 0.25rem 0 0 0.25rem !important;
+}
+.input_user,
+.input_pass:focus {
+    box-shadow: none !important;
+    outline: 0px !important;
+}
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color: #c0392b !important;
+}
+/* +++++++++++++++++++++++++++++++++++++++++++ */
+/* END OF LOG IN SECTION */
+/* +++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++ */
+/* M E D I A  Q U E R I E S */
+/* +++++++++++++++++++++++++++++++++++++++++++ */
 
 /* Cellphone */
 /* use % on 'width' instead of 'px'*/
@@ -333,4 +443,7 @@ M E D I A  Q U E R I E S
     h5 {font-size: 17px;}
     h6 {font-size: 13px;}
     h7 {font-size: 12px;}
+    #pdc_logo {
+        height: 100px;
+    }
 }

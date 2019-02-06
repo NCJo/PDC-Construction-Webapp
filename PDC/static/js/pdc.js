@@ -65,14 +65,37 @@ $(window).on('load', function() {
     // Animate loader off screen
     $("#cover").fadeOut(800);;
 });
+// End of hide page until completely loaded
 
 
-// Remove class
+// Responsive function
 // TODO: erase shift-right function from logo when screen size is xxxx
 $(document).ready(function() {
     var alterClass = function() {
         // window's width
         var ww = document.body.clientWidth;
+        // Fix overlapped banner and nav @530
+        if (ww <= 530) {
+            $('#banner').removeClass('padmefromnav');
+            $('#banner').addClass('padmefromnav-sm');
+            $('#landing-carousel').removeClass('padmefromnav');
+            $('#landing-carousel').addClass('padmefromnav-sm');
+            $('#empty-div').removeClass('padmefromnav');
+            $('#empty-div').addClass('padmefromnav-sm');
+        } else if (ww > 531) {
+            $('#banner').removeClass('padmefromnav-sm');
+            $('#banner').addClass('padmefromnav');
+            $('#landing-carousel').removeClass('padmefromnav-sm');
+            $('#landing-carousel').addClass('padmefromnav');
+            $('#empty-div').removeClass('padmefromnav');
+            $('#empty-div').addClass('padmefromnav-sm');
+        };
+
+        // Fix weird right side margin
+        if (ww < 578) {
+            $('.col-md-4').addClass('no-right-pad');
+        };
+
         if (ww < 625) {
             $('#pdc_logo').removeClass('shift-right');
             // $('#grid-gallery').find('*').addClass('no-right-pad');
@@ -81,9 +104,40 @@ $(document).ready(function() {
             $('#pdc_logo').addClass('mx-auto');
             
         };
-        // Fix weird right side margin
-        if (ww < 578) {
-            $('.col-md-4').addClass('no-right-pad');
+
+        if (ww <= 766) {
+            // Remove border line from the map element and add padding
+            $('#map').removeClass("pr-4");
+            $('#map').removeClass("map-border");
+            $('#map').css("padding-right", "0px");
+            $('#company-info').addClass("pl-4");
+            $('#company-info').addClass("pt-3");
+        } else if (ww > 767) {
+            $('#map').addClass("pr-4");
+            $('#map').addClass("map-border");
+            $('#map').css("padding-right", "15px");
+            $('#company-info').removeClass("pl-4");
+            $('#company-info').removeClass("pt-3");
+        };
+
+        if (ww <= 768) {
+            // ipad and ipad pro - carousel size
+            $('#demo').removeClass('col-md-5');
+            $('#demo').addClass('col-md-11');
+            // Gallery col-md-11 set all
+            $('.panel').addClass('col-md-11');
+            // Center profile images of members
+            $('#profile > div > div > div').addClass('text-center');
+            
+        } else if (ww > 769) {
+            // ipad and ipad pro - carousel size
+            $('#demo').removeClass('col-md-11');
+            $('#demo').addClass('col-md-5');
+            // Gallery size col-md-5
+            $('.panel').removeClass('col-md-11');
+            $('.panel').addClass('col-md-7');
+            // Move profile images to the left
+            $('#profile > div > div > div').removeClass('text-center');
         };
         
         if (ww < 1030) {
@@ -103,41 +157,7 @@ $(document).ready(function() {
             $('div.imgheader > img').css({"max-height":"400", "min-width":"auto"});
             // Align descriptions
             $('#desc_table').removeClass('align-self-center');
-        }
-        if (ww <= 768) {
-            // ipad and ipad pro - carousel size
-            $('#demo').removeClass('col-md-5');
-            $('#demo').addClass('col-md-11');
-            // Gallery col-md-11 set all
-            $('.panel').addClass('col-md-11');
-            // Center profile images of members
-            $('#profile > div > div > div').addClass('text-center');
-            
-        } else if (ww > 769) {
-            // ipad and ipad pro - carousel size
-            $('#demo').removeClass('col-md-11');
-            $('#demo').addClass('col-md-5');
-            // Gallery size col-md-5
-            $('.panel').removeClass('col-md-11');
-            $('.panel').addClass('col-md-7');
-            // Move profile images to the left
-            $('#profile > div > div > div').removeClass('text-center');
-        }
-
-        if (ww <= 766) {
-            // Remove border line from the map element and add padding
-            $('#map').removeClass("pr-4");
-            $('#map').removeClass("map-border");
-            $('#map').css("padding-right", "0px");
-            $('#company-info').addClass("pl-4");
-            $('#company-info').addClass("pt-3");
-        } else if (ww > 767) {
-            $('#map').addClass("pr-4");
-            $('#map').addClass("map-border");
-            $('#map').css("padding-right", "15px");
-            $('#company-info').removeClass("pl-4");
-            $('#company-info').removeClass("pt-3");
-        }
+        };
 
         if (ww <= 1240) {
             // Possible logo?
@@ -146,16 +166,7 @@ $(document).ready(function() {
             $('div > div > div > a > img').css({"margin-top":"0px", "margin-bottom":"0px"});
         } else if (ww > 1241) {
             $('div > div > div > a > img').css({"margin-top":"10px", "margin-bottom":"10px"});
-        }
-
-        // Fix overlapped banner and nav @530
-        if (ww <= 530) {
-            $('#banner').removeClass('padmefromnav');
-            $('#banner').addClass('padmefromnav-sm');
-        } else if (ww > 531) {
-            $('#banner').removeClass('padmefromnav-sm');
-            $('#banner').addClass('padmefromnav');
-        }
+        };
 
 
     };
