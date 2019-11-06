@@ -28,11 +28,27 @@ urlpatterns = [
     path('logout/', views.logout_view, name='logout'),
     path('', views.index, name='index'),
     path('projects/', views.projects, name='projects'),
+
+
+    # Old
     path('projects/samed/', views.samed_gallery, name='samed_gallery'),
     path('projects/ptb/', views.ptb_gallery, name='ptb_gallery'),
     path('projects/cp/', views.cp_gallery, name='cp_gallery'),
     path('projects/yip/', views.yip_gallery, name='yip_gallery'),
     path('projects/sangfah/', views.sangfah_gallery, name='sangfah_gallery'),
+    # End of old
+
+
+    # Projects
+    path('projects/one/', views.one_gallery, name="one_gallery"),
+    path('projects/two/', views.two_gallery, name="two_gallery"),
+    path('projects/three/', views.three_gallery, name="three_gallery"),
+    path('projects/four/', views.four_gallery, name="four_gallery"),
+
+
+
+    # End of projects
+
     path('activities/', views.activities, name='activities'),
     path('about_us/', views.about_us, name='about_us'),
     path('contact_us/', views.contact_us, name='contact_us'),

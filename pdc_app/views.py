@@ -15,6 +15,7 @@ def index(request):
 def projects(request):
     return render(request, 'pdc_templates/projects.html')
 
+# OLD
 @login_required
 def samed_gallery(request):
     return render(request, 'pdc_templates/samed.html')
@@ -34,6 +35,29 @@ def yip_gallery(request):
 @login_required
 def sangfah_gallery(request):
     return render(request, 'pdc_templates/sangfah.html')
+# END OF OLD
+
+# Projects
+@login_required
+def one_gallery(request):
+    return render(request, 'pdc_templates/projects/one.html')
+
+@login_required
+def two_gallery(request):
+    return render(request, 'pdc_templates/projects/two.html')
+
+@login_required
+def three_gallery(request):
+    return render(request, 'pdc_templates/projects/three.html')
+
+@login_required
+def four_gallery(request):
+    return render(request, 'pdc_templates/projects/four.html')
+
+
+# End of Projects
+
+
 
 @login_required
 def activities(request):
