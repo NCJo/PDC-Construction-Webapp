@@ -76,13 +76,19 @@
                 <a class="nav-item nav-link theme-font-color active lead cabin-font" href="{% url 'projects' %}">Projects</a>
                 <a class="nav-item nav-link theme-font-color active lead cabin-font" href="{% url 'activities' %}">News & Activities</a>
                 <a class="nav-item nav-link theme-font-color active lead cabin-font" href="{% url 'contact_us' %}">Contact Us</a>
-                <a class="nav-item nav-link lead cabin-font small" href="{% url 'logout' %}">
-                    {% if user.is_authenticated %}
+                
+                <!-- Authenticate Section -->
+
+                <!-- <a class="nav-item nav-link lead cabin-font small" href="{% url 'logout' %}"> -->
+                    <!-- {% if user.is_authenticated %}
                         Hi {{ user.username }} ! Click to Logout 
                     {% else %}
                         <p>You are not logged in</p>
                         <a href="{% url 'login' %}">login</a>
-                    {% endif %}
+                    {% endif %} -->
+                    
+                <!-- End of Authenticate Section -->
+
                 <span class="sr-only">(current)</span></a>
                 <!-- TODO: Button shows current language -->
                 <!-- TODO: drop down menu selection? -->
