@@ -1,0 +1,218 @@
+{% extends "pdc_templates/base.html" %}
+{% load staticfiles %}
+
+{% block title_block %}
+    Samed Island Port 
+{% endblock title_block %}
+
+{% block body_block %}
+
+<!-- Banner -->
+<div class="imgheader img-fluid">
+    <img class="padmefromnav padmebit" id="banner" src="{% static "images/samed_island/si03_banner.jpg" %}" alt="">
+</div>
+
+<!-- Title -->
+<div class="container padmefrombanner padmebit">
+    <h1 class="col text-center">PROJECT</h1>
+    <hr class="" size="5">
+    <!-- <h4 class="col text-center">อาคารคลุมเครน</h4> -->
+</div>
+
+<!-- Carousel -->
+<div id="demo" class="container col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 carousel slide carousel-fade" data-ride="carousel">
+
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#demo" data-slide-to="0" class="active"></li>
+			<li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+            <li data-target="#demo" data-slide-to="3"></li>
+		</ol>
+
+		<!-- Carousel -->
+		<div class="carousel-inner shadow">
+		  <div class="carousel-item active">
+			<img class="d-block img-fluid" src="{% static "images/carousels/gallery/samed/si01c.jpg" %}" alt="First slide">
+			<div class="carousel-caption d-none d-md-block">
+				<h5></h5>
+				<p></p>
+			</div>
+		  </div>
+		  <div class="carousel-item">
+			<img class="d-block img-fluid" src="{% static "images/carousels/gallery/samed/si02c.jpg" %}" alt="Second slide">
+			<div class="carousel-caption d-none d-md-block">
+				<h5></h5>
+				<p></p>
+			</div>
+		  </div>
+		  <div class="carousel-item">
+			<img class="d-block img-fluid" src="{% static "images/carousels/gallery/samed/si03c.jpg" %}" alt="Third slide">
+			<div class="carousel-caption d-none d-md-block">
+				<h5></h5>
+				<p></p>
+			</div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block img-fluid" src="{% static "images/carousels/gallery/samed/si04c.jpg" %}" alt="Third slide">
+            <div class="carousel-caption d-none d-md-block">
+                <h5></h5>
+                <p></p>
+            </div>
+            </div>
+		</div>
+
+		<!-- Carousel controls left and right -->
+		<a class="carousel-control-prev" href="#demo" role="button" data-slide="prev">
+		  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		  <span class="sr-only">Previous</span>
+		</a>
+		<a class="carousel-control-next" href="#demo" role="button" data-slide="next">
+		  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		  <span class="sr-only">Next</span>
+		</a>
+    </div>
+    <br>
+    <br>
+    <!-- End of Carousel -->
+    
+
+<!-- Description -->
+<div class='align-self-center text-center'><h3><strong>ข้อมูลของโครงการ</strong></h3></div>
+<div class="container bg-white col-lg-7">
+    <div class="row">
+        <div class= "col align-self-center" id="desc_table">
+        <table class="table order-first">
+            <tbody>
+                <tr>
+                    <th scope="row"><h4>ชื่อโครงการ (Projects)</strong></h4></th>
+                    <td><h4>ก่อสร้างอาคารโรงงานพร้อมสำนักงานโครงการ Packing Building 2</h4></td>
+                </tr>
+                <tr>
+                    <th scope="row"><h4>เจ้าของโครงการ (Client)</strong></h4></th>
+                    <td><h4>บจก.แสงฟ้าอะกริโปรดักส์</h4></td>
+                </tr>
+                <tr>
+                    <th scope="row"><h4>สถานที่ก่อสร้าง (Location)</h4>
+                    </th>
+                    <td><h4>ออ.ป่าโมก จ.อ่างทอง</h4></td>
+                </tr>
+                <tr>
+                    <th scope="row"><h4>ลักษณะอาคาร <br>(Building Type)</h4></th>
+                    <td><h4>โรงงาน</h4></td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </div>
+</div>
+
+<!-- Junk -->
+<!-- Description
+<div class="container bg-white col-lg-9">
+        <div class="row">
+            <div class= "col align-self-center" id="desc_table">
+            <table class="table order-first">
+                <tbody>
+                    <tr>
+                        <th scope="row">เจ้าของโครงการ</th>
+                        <td>องค์การบริหารส่วนจังหวัดระยอง</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">สถานที่ก่อสร้าง
+                        </th>
+                        <td>ตำบลเพ อำเภอเมืองระยอง จังหวัดระยอง</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">พื้นที่</th>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">มูลค่างาน</th>
+                        <td>169,900,000.00 บาท</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+            <div class= "col">
+            <table class="table align-self-center" id="desc_table">
+                <thead>
+                    <tr>
+                        <th scope="col"><h4>Project Details</h4></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Client</th>
+                        <td>City of Rayong</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Location
+                        </th>
+                        <td>District of Pae, City of Rayong</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Area Size</th>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Value</th>
+                        <td>169,900,000.00 Baht</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </div>
+    </div> -->
+
+<br>
+
+<!-- class: gallery-container -->
+<!-- class: tz-gallery -->
+<!-- class: lightbox -->
+<!-- Grid -->
+<div class='align-self-center text-center'><h3><strong>Gallery</strong></h3></div>
+
+<div class="container col-md-7 gallery-container fade-in">
+    <div class="tz-gallery">
+        <div class="row justify-content-start align-items-center" id="grid-gallery">
+            <!-- CP warehouse -->
+            <div class="col-sm-12 col-md-4">
+                <a class ="lightbox" href="{% static "images/samed_island/si01.jpg" %}">
+                    <img class="img-thumbnail shadow img-fluid" src="{% static "images/carousels/gallery/samed/si01c.jpg" %}" alt="">
+                </a>
+            </div>
+            <!-- Phettongbor warehouse -->
+            <div class="col-sm-6 col-md-4">
+                <a class ="lightbox" href="{% static "images/samed_island/si02.jpg" %}">
+                    <img class="img-thumbnail shadow img-fluid lightbox" src="{% static "images/carousels/gallery/samed/si02c.jpg" %}" alt="">
+                </a>
+            </div>
+            <!-- Yipinsoi factory -->
+            <div class="col-sm-6 col-md-4">
+                <a class ="lightbox" href="{% static "images/samed_island/si03.jpg" %}">
+                    <img class="img-thumbnail shadow img-fluid lightbox" src="{% static "images/carousels/gallery/samed/si03c.jpg" %}" alt="">
+                </a>
+            </div>
+        </div>
+        <br>
+        <div class="row justify-content-start align-items-center">
+            <!-- Samet island -->
+            <div class="col-sm-12 col-md-4">
+                <a class ="lightbox" href="{% static "images/samed_island/si04.jpg" %}">
+                    <img class="img-thumbnail shadow img-fluid lightbox" src="{% static "images/carousels/gallery/samed/si04c.jpg" %}" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+  <!-- placeholder -->
+  <!-- <div class="row">
+    <div class="col">7</div>
+    <div class="col">8</div>
+    <div class="col">9</div>
+  </div> -->
+</div>
+<!-- End of grid -->
+
+
+{% endblock body_block %}

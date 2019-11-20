@@ -14,6 +14,7 @@ $(document).ready(function() {
           $("#project" + x ).fadeIn();
         } else {
           $("#project" + x ).hide();
+          $("#br" + x).hide();
         };
         // console.log(tag);
         //console.log(JSON.stringify($("#project" + x ).html()).indexOf(tag));
@@ -110,12 +111,14 @@ $(document).ready(function() {
             $('#map').removeClass("pr-4");
             $('#map').removeClass("map-border");
             $('#map').css("padding-right", "0px");
+            $('#map').css({"height":"20em"});
             $('#company-info').addClass("pl-4");
             $('#company-info').addClass("pt-3");
         } else if (ww > 767) {
             $('#map').addClass("pr-4");
             $('#map').addClass("map-border");
             $('#map').css("padding-right", "15px");
+            $('#map').css({"height":"40em"});
             $('#company-info').removeClass("pl-4");
             $('#company-info').removeClass("pt-3");
         };

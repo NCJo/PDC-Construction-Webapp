@@ -12,7 +12,8 @@
 <div class="container col-md-12">
     <div class="row justify-content-center">
         <div class= "pr-4 col-md-6 map-border text-center" id="map">
-            <a href="{% static "images/map.jpg" %}"><img class="img-fluid" src="{% static 'images/map.jpg' %}" alt=""></a>
+            <script src="{% static "js/map.js" %}"></script>
+            <!-- <a href="{% static "images/map.jpg" %}"><img class="img-fluid" src="{% static 'images/map.jpg' %}" alt=""></a> -->
         </div>
         <div class="pl-4 col-md-6" id="company-info">
             <h2><strong>บริษัท พี.ดี.ซี. คอนสตรัคชั่น จำกัด</strong></h2>
@@ -33,5 +34,6 @@
         </div>
     </div>  
 </div>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKxYMTcGtkijYCK_KBveqklSzvekUSHIs&callback=initMap"></script>
     
 {% endblock body_block %}

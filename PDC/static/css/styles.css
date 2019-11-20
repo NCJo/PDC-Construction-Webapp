@@ -170,7 +170,7 @@ hr {
 /* PROJECTS GALLERY PAGE SECTION */
 /* +++++++++++++++++++++++++++++++++++++++++++ */
 .padmetop {
-    padding-top: 0.2em;
+    margin-top: 0.2em;
 }
 /* For hiding 'All' tag filter */
 .hidden {
@@ -194,7 +194,7 @@ hr {
 }
 /* makes jumbotron responsive */
 .jumbotron {
-    background: url("../images/yipinsoi_factory/ys03.jpg") no-repeat center;
+    background: url("../images/projects/landing.jpg") no-repeat center;
     background-size: cover;
     min-width: 100%;
     height: 100vh;
@@ -202,7 +202,7 @@ hr {
     padding: 0 !important;
 }
 .blurme {
-    background-color: rgba(243, 243, 243, 0.4) !important;
+    background-color: rgba(243, 243, 243, 0.7) !important;
 }
 /* use this: https://stackoverflow.com/questions/42252443/vertical-align-center-in-bootstrap-4 */
 /* center text in jumbotron (might work for other) */
@@ -283,8 +283,12 @@ hr {
     margin-bottom: 20px;
 }
 .map-border {
-    border-right: 1px solid #F01A22 !important;
+    border-right: 1px solid rgba(185, 164, 76, 1) !important;
 }
+#map {
+    height: 40em;
+}
+
 /* +++++++++++++++++++++++++++++++++++++++++++ */
 /* END OF NEWS & ACTIVITIES PAGE SECTION */
 /* +++++++++++++++++++++++++++++++++++++++++++ */

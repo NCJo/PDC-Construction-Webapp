@@ -21,138 +21,713 @@
       <p>Filter By /  :
         <button type="button" class="btn btn-primary btn-xs btn-tag">All</button>
         <button type="button" class="btn btn-primary btn-xs btn-tag">Port</button>
-        <button type="button" class="btn btn-primary btn-xs btn-tag">Warehouse</button>
+        <button type="button" class="btn btn-primary btn-xs btn-tag">Building</button>
+        <button type="button" class="btn btn-primary btn-xs btn-tag">Factory</button>
         <button type="button" class="btn btn-primary btn-xs btn-tag">Infrastructure</button>
-        <button type="button" class="btn btn-primary btn-xs btn-tag">Office</button>
         
       </p>
     </div>  
   </div>
 </div>
-<!-- Description -->
+<br>
+
+
+<!-- Projects Section -->
+<!-- 1 -->
 <div class="container grey rounded my-auto panel shadow-sm col-11 fade-in" id="project1">
     <div class="row">
         <div class="col order-first my-auto">
-            <a href="{% url 'samed_gallery' %}"><img class="img-thumbnail " src="{% static "images/projects/si04_proj.jpg" %}" alt=""></a>
+            <a href="{% url 'one_gallery' %}"><img class="img-thumbnail " src="{% static "images/projects/1/1_cp_01.jpg" %}" alt=""></a>
         </div>
         <div class="col order-last my-auto">
           <br>
-          <h3 class="font-weight-bold">ท่าเรือเกาะเสม็ด</h3>
-          <h5>เจ้าของโครงการ&nbsp;:&nbsp;&nbsp;&nbsp;องค์การบริหารส่วนจังหวัดระยอง</h5>
+          <h3 class="font-weight-bold">อาคารคลุมเครน</h3>
+          <h5>เจ้าของโครงการ&nbsp;:&nbsp;&nbsp;&nbsp;บจก.ท่าเรืออยุธยาและไอซีดี</h5>
           <br class="rwd-break">
-          <h5><strong>Samed Port</strong></h5>
-          <h6>Client&nbsp;:&nbsp;&nbsp;&nbsp;City of Rayong</h6>
+          <h6>สถานที่ก่อสร้าง&nbsp;:&nbsp;&nbsp;&nbsp;อ.ท่าเรือ จ.พระนครศรีอยุธยา</h6>
           <hr class="" size="3">
-          <a href="{% url 'samed_gallery' %}" class="btn btn-primary" role="button" aria-disabled="true">Read More</button></a>
+          <a href="{% url 'one_gallery' %}" class="btn btn-primary" role="button" aria-disabled="true">Read More</button></a>
           <div class="panel-footer tag padmetop">
             <span class="badge badge-secondary label label-primary hidden">All</span>
-            <span class="badge badge-secondary label label-primary">Port</span>
+            <span class="badge badge-secondary label label-primary">Building</span>
           </div>
           <br>
         </div>
     </div>
 </div>
 
-<br>
-
-<div class="container bg-white rounded my-auto panel shadow-sm col-11 fade-in" id="project2">
-    <div class="row">
-        <div class="col order-first my-auto">
-            <a href="{% url 'cp_gallery' %}"><img class="img-thumbnail " src="{% static "images/projects/cp02_proj.jpg" %}" alt=""></a>
-        </div>
-        <div class="col order-last my-auto">
-          <br>
-          <h3 class="font-weight-bold">ซีพี</h3>
-          <h5>เจ้าของโครงการ&nbsp;:&nbsp;&nbsp;&nbsp;NO DATA</h5>
-          <br class="rwd-break">
-          <h5>NO DATA CP Crane Infrastructure</h5>
-          <h6>Client&nbsp;:&nbsp;&nbsp;&nbsp;NO DATA</h6>
-          <hr class="" size="3">
-          <a href="{% url 'cp_gallery' %}" class="btn btn-primary" role="button" aria-disabled="true">Read More</button></a>
-          <div class="panel-footer tag padmetop">
-              <span class="badge badge-secondary label label-primary hidden">All</span>
-              <span class="badge badge-secondary label label-primary">Infrastructure</span>
-          </div>
-          <br>
-        </div>
-    </div>
+<div id="br2">
+  <br>
 </div>
 
-<br>
-
-<div class="container my-auto panel grey rounded shadow-sm col-11 fade-in" id="project3">
-    <div class="row">
-        <div class="col order-first my-auto">
-            <a href="{% url 'yip_gallery' %}"><img class="img-thumbnail " src="{% static "images/projects/ys01_proj.jpg" %}" alt=""></a>
-        </div>
-        <div class="col order-last my-auto">
-          <br>
-          <h3 class="font-weight-bold">โรงงานผลิตปุ๋ย</h3>
-          <h5>เจ้าของโครงการ&nbsp;:&nbsp;&nbsp;&nbsp;บริษัทยิบอินซอยและแยคส์จำกัด</h5>
-          <br class="rwd-break">
-          <h5>Fertilizer Production Building</h5>
-          <h6>Client&nbsp;:&nbsp;&nbsp;&nbsp;Yip-In-Soil and Yak CO.,LTD.</h6>
-          <hr class="" size="3">
-          <a href="{% url 'yip_gallery' %}"class="btn btn-primary btn" role="button" aria-disabled="true">Read More</button></a>
-          <div class="panel-footer tag padmetop">
-              <span class="badge badge-secondary label label-primary hidden">All</span>
-              <span class="badge badge-secondary label label-primary">Infrastructure</span>
-          </div>
-          <br>          
-        </div>
-    </div>
-</div>
-
-<br>
-
-<div class="container bg-white rounded my-auto panel shadow-sm col-11 fade-in" id="project4">
-    <div class="row">
-        <div class="col order-first my-auto">
-            <a href="{% url 'ptb_gallery' %}"><img class="img-thumbnail " src="{% static "images/projects/pw02_proj.jpg" %}" alt=""></a>
-        </div>
-        <div class="col order-last my-auto">
-          <br>
-          <h3 class="font-weight-bold">NO DATA - PTB</h3>
-          <h5>เจ้าของโครงการ&nbsp;:&nbsp;&nbsp;&nbsp;NO DATA</h5>
-          <br class="rwd-break">
-          <h5>NO DATA - PTB</h5>
-          <h6>Client&nbsp;:&nbsp;&nbsp;&nbsp;NO DATA</h6>
-          <hr class="" size="3">
-          <a href="{% url 'ptb_gallery' %}" class="btn btn-primary btn" role="button" aria-disabled="true">Read More</button></a>
-          <div class="panel-footer tag padmetop">
-              <span class="badge badge-secondary label label-primary hidden">All</span>
-              <span class="badge badge-secondary label label-primary">Warehouse</span>
-          </div>
-          <br>
-        </div>
-    </div>
-</div>
-
-<br>
-
-<div class="container grey  rounded my-auto panel shadow-sm col-11 fade-in" id="project5">
-    <div class="row">
-        <div class="col order-first my-auto">
-            <a href="{% url 'sangfah_gallery' %}"><img class="img-thumbnail " src="{% static "images/projects/sf03_proj.jpg" %}" alt=""></a>
-        </div>
-        <div class="col order-last my-auto">
-          <br>
-          <h3 class="font-weight-bold">ก่อสร้างโครงการ Packing Building 2</h3>
-          <h5>เจ้าของโครงการ&nbsp;:&nbsp;&nbsp;&nbsp;บริษัทแสงฟ้าอะกริโปรดักส์จำกัด</h5>
-          <br class="rwd-break">
-          <h>Packing Building</h5>
-          <h6>Client&nbsp;:&nbsp;&nbsp;&nbsp;Sangfah Agri Product CO.,LTD.</h6>
-          <hr class="" size="3">
-          <a href="{% url 'sangfah_gallery' %}"class="btn btn-primary btn" role="button" aria-disabled="true">Read More</button></a> 
-          <div class="panel-footer tag padmetop">
-              <span class="badge badge-secondary label label-primary hidden">All</span>
-              <span class="badge badge-secondary label label-primary">Office</span>
-          </div>
+<!-- 2 -->
+<div class="container grey rounded my-auto panel shadow-sm col-11 fade-in" id="project2">
+  <div class="row">
+      <div class="col order-first my-auto">
+          <a href="{% url 'two_gallery' %}"><img class="img-thumbnail " src="{% static "images/projects/2/2_cp_03.jpg" %}" alt=""></a>
+      </div>
+      <div class="col order-last my-auto">
+        <br>
+        <h3 class="font-weight-bold">อาคารคลังสินค้า</h3>
+        <h5>เจ้าของโครงการ&nbsp;:&nbsp;&nbsp;&nbsp;บจก.เจียไต๋ (CP Group)</h5>
+        <br class="rwd-break">
+        <h6>สถานที่ก่อสร้าง&nbsp;:&nbsp;&nbsp;&nbsp;อ.บางไทร จ.พระนครศรีอยุธยา</h6>
+        <hr class="" size="3">
+        <a href="{% url 'two_gallery' %}" class="btn btn-primary" role="button" aria-disabled="true">Read More</button></a>
+        <div class="panel-footer tag padmetop">
+          <span class="badge badge-secondary label label-primary hidden">All</span>
+          <span class="badge badge-secondary label label-primary">Factory</span>
         </div>
         <br>
-    </div>
+      </div>
+  </div>
 </div>
-<br>
 
+<div id="br3">
+  <br>
+</div>
 
+<!-- 3 -->
+<div class="container grey rounded my-auto panel shadow-sm col-11 fade-in" id="project3">
+  <div class="row">
+      <div class="col order-first my-auto">
+          <a href="{% url 'three_gallery' %}"><img class="img-thumbnail " src="{% static "images/projects/3" %}" alt=""></a>
+      </div>
+      <div class="col order-last my-auto">
+        <br>
+        <h3 class="font-weight-bold">ท่าเรือเกาะสีชัง ระยะที่ 2</h3>
+        <h5>เจ้าของโครงการ&nbsp;:&nbsp;&nbsp;&nbsp;กรมเจ้าท่า</h5>
+        <br class="rwd-break">
+        <h6>สถานที่ก่อสร้าง&nbsp;:&nbsp;&nbsp;&nbsp;อ.เมือง จ.ชุมพร</h6>
+        <hr class="" size="3">
+        <a href="{% url 'three_gallery' %}" class="btn btn-primary" role="button" aria-disabled="true">Read More</button></a>
+        <div class="panel-footer tag padmetop">
+          <span class="badge badge-secondary label label-primary hidden">All</span>
+          <span class="badge badge-secondary label label-primary">Port</span>
+        </div>
+        <br>
+      </div>
+  </div>
+</div>
+
+<div id="br4">
+  <br>
+</div>
+
+<!-- 4 -->
+<div class="container grey rounded my-auto panel shadow-sm col-11 fade-in" id="project4">
+  <div class="row">
+      <div class="col order-first my-auto">
+          <a href="{% url 'four_gallery' %}"><img class="img-thumbnail " src="{% static "images/projects/4/4_tri_01.jpg" %}" alt=""></a>
+      </div>
+      <div class="col order-last my-auto">
+        <br>
+        <h3 class="font-weight-bold">ท่าเทียบเรือสามเสียม</h3>
+        <h5>เจ้าของโครงการ&nbsp;:&nbsp;&nbsp;&nbsp;กรมเจ้าท่า</h5>
+        <br class="rwd-break">
+        <h6>สถานที่ก่อสร้าง&nbsp;:&nbsp;&nbsp;&nbsp;อ.เมือง จ.ชุมพร</h6>
+        <hr class="" size="3">
+        <a href="{% url 'four_gallery' %}" class="btn btn-primary" role="button" aria-disabled="true">Read More</button></a>
+        <div class="panel-footer tag padmetop">
+          <span class="badge badge-secondary label label-primary hidden">All</span>
+          <span class="badge badge-secondary label label-primary">Port</span>
+        </div>
+        <br>
+      </div>
+  </div>
+</div>
+
+<div id="br5">
+  <br>
+</div>
+
+<!-- 5 -->
+<div class="container grey rounded my-auto panel shadow-sm col-11 fade-in" id="project5">
+  <div class="row">
+      <div class="col order-first my-auto">
+          <a href="{% url 'five_gallery' %}"><img class="img-thumbnail " src="{% static "images/projects/5/5_pl_01.jpg" %}" alt=""></a>
+      </div>
+      <div class="col order-last my-auto">
+        <br>
+        <h3 class="font-weight-bold">ท่าเทียบเรือ และโกรกขึ้นลงสินค้า</h3>
+        <h5>เจ้าของโครงการ&nbsp;:&nbsp;&nbsp;&nbsp;บจก.พอตลิงค์</h5>
+        <br class="rwd-break">
+        <h6>สถานที่ก่อสร้าง&nbsp;:&nbsp;&nbsp;&nbsp;อ.นครหลวง จ.พระนครศรีอยุธยา</h6>
+        <hr class="" size="3">
+        <a href="{% url 'five_gallery' %}" class="btn btn-primary" role="button" aria-disabled="true">Read More</button></a>
+        <div class="panel-footer tag padmetop">
+          <span class="badge badge-secondary label label-primary hidden">All</span>
+          <span class="badge badge-secondary label label-primary">Port</span>
+        </div>
+        <br>
+      </div>
+  </div>
+</div>
+
+<div id="br6">
+  <br>
+</div>
+
+<!-- 6 -->
+<div class="container grey rounded my-auto panel shadow-sm col-11 fade-in" id="project6">
+  <div class="row">
+      <div class="col order-first my-auto">
+          <a href="{% url 'six_gallery' %}"><img class="img-thumbnail " src="{% static "images/projects/6/6_lk_01.jpg" %}" alt=""></a>
+      </div>
+      <div class="col order-last my-auto">
+        <br>
+        <h3 class="font-weight-bold">ท่าเทียบเรือ</h3>
+        <h5>เจ้าของโครงการ&nbsp;:&nbsp;&nbsp;&nbsp;บจก.ลัคกี้ รีซอสเซส แอนด์ โลจิสติกส์</h5>
+        <br class="rwd-break">
+        <h6>สถานที่ก่อสร้าง&nbsp;:&nbsp;&nbsp;&nbsp;อ.นครหลวง จ.พระนครศรีอยุธยา</h6>
+        <hr class="" size="3">
+        <a href="{% url 'six_gallery' %}" class="btn btn-primary" role="button" aria-disabled="true">Read More</button></a>
+        <div class="panel-footer tag padmetop">
+          <span class="badge badge-secondary label label-primary hidden">All</span>
+          <span class="badge badge-secondary label label-primary">Port</span>
+        </div>
+        <br>
+      </div>
+  </div>
+</div>
+
+<div id="br7">
+  <br>
+</div>
+
+<!-- 7 -->
+<div class="container grey rounded my-auto panel shadow-sm col-11 fade-in" id="project7">
+  <div class="row">
+      <div class="col order-first my-auto">
+          <a href="{% url 'seven_gallery' %}"><img class="img-thumbnail " src="{% static "images/projects/6/6_lk_01.jpg" %}" alt=""></a>
+      </div>
+      <div class="col order-last my-auto">
+        <br>
+        <h3 class="font-weight-bold">Pumps and Water Grid</h3>
+        <h5>เจ้าของโครงการ&nbsp;:&nbsp;&nbsp;&nbsp;บมจ.ไออาร์ พีซี</h5>
+        <br class="rwd-break">
+        <h6>สถานที่ก่อสร้าง&nbsp;:&nbsp;&nbsp;&nbsp;อ.เมือง จ.ระยอง</h6>
+        <hr class="" size="3">
+        <a href="{% url 'seven_gallery' %}" class="btn btn-primary" role="button" aria-disabled="true">Read More</button></a>
+        <div class="panel-footer tag padmetop">
+          <span class="badge badge-secondary label label-primary hidden">All</span>
+          <span class="badge badge-secondary label label-primary">Infrastructure</span>
+        </div>
+        <br>
+      </div>
+  </div>
+</div>
+
+<div id="br8">
+  <br>
+</div>
+
+<!-- 8 -->
+<div class="container grey rounded my-auto panel shadow-sm col-11 fade-in" id="project8">
+  <div class="row">
+      <div class="col order-first my-auto">
+          <a href="{% url 'eight_gallery' %}"><img class="img-thumbnail " src="{% static "images/projects/6/6_lk_01.jpg" %}" alt=""></a>
+      </div>
+      <div class="col order-last my-auto">
+        <br>
+        <h3 class="font-weight-bold">ท่าเทียบเรือเกาะเสม็ด</h3>
+        <h5>เจ้าของโครงการ&nbsp;:&nbsp;&nbsp;&nbsp;กิจการร่วมค้าบ้านค่ายพระนคร</h5>
+        <br class="rwd-break">
+        <h6>สถานที่ก่อสร้าง&nbsp;:&nbsp;&nbsp;&nbsp;อ.เมือง จ.ระยอง</h6>
+        <hr class="" size="3">
+        <a href="{% url 'eight_gallery' %}" class="btn btn-primary" role="button" aria-disabled="true">Read More</button></a>
+        <div class="panel-footer tag padmetop">
+          <span class="badge badge-secondary label label-primary hidden">All</span>
+          <span class="badge badge-secondary label label-primary">Port</span>
+        </div>
+        <br>
+      </div>
+  </div>
+</div>
+
+<div id="br9">
+  <br>
+</div>
+
+<!-- 9 -->
+<div class="container grey rounded my-auto panel shadow-sm col-11 fade-in" id="project9">
+  <div class="row">
+      <div class="col order-first my-auto">
+          <a href="{% url 'nine_gallery' %}"><img class="img-thumbnail " src="{% static "images/projects/6/6_lk_01.jpg" %}" alt=""></a>
+      </div>
+      <div class="col order-last my-auto">
+        <br>
+        <h3 class="font-weight-bold">โรงสูบน้ำ</h3>
+        <h5>เจ้าของโครงการ&nbsp;:&nbsp;&nbsp;&nbsp;Thai Rayon Public Company Limited</h5>
+        <br class="rwd-break">
+        <h6>สถานที่ก่อสร้าง&nbsp;:&nbsp;&nbsp;&nbsp;อ.ป่าโมก จ.อ่างทอง</h6>
+        <hr class="" size="3">
+        <a href="{% url 'nine_gallery' %}" class="btn btn-primary" role="button" aria-disabled="true">Read More</button></a>
+        <div class="panel-footer tag padmetop">
+          <span class="badge badge-secondary label label-primary hidden">All</span>
+          <span class="badge badge-secondary label label-primary">Infrastructure</span>
+        </div>
+        <br>
+      </div>
+  </div>
+</div>
+
+<div id="br10">
+  <br>
+</div>
+
+<!-- 10 -->
+<div class="container grey rounded my-auto panel shadow-sm col-11 fade-in" id="project10">
+  <div class="row">
+      <div class="col order-first my-auto">
+          <a href="{% url 'ten_gallery' %}"><img class="img-thumbnail " src="{% static "images/projects/6/6_lk_01.jpg" %}" alt=""></a>
+      </div>
+      <div class="col order-last my-auto">
+        <br>
+        <h3 class="font-weight-bold">อาคารโรงงานพร้อมสำนักงาน</h3>
+        <h5>เจ้าของโครงการ&nbsp;:&nbsp;&nbsp;&nbsp;บจก.ดีไลท์ พลัส</h5>
+        <br class="rwd-break">
+        <h6>สถานที่ก่อสร้าง&nbsp;:&nbsp;&nbsp;&nbsp;อ.เมือง จ.สมุทรสาคร</h6>
+        <hr class="" size="3">
+        <a href="{% url 'ten_gallery' %}" class="btn btn-primary" role="button" aria-disabled="true">Read More</button></a>
+        <div class="panel-footer tag padmetop">
+          <span class="badge badge-secondary label label-primary hidden">All</span>
+          <span class="badge badge-secondary label label-primary">Factory</span>
+        </div>
+        <br>
+      </div>
+  </div>
+</div>
+
+<div id="br11">
+  <br>
+</div>
+
+<!-- 11 -->
+<div class="container grey rounded my-auto panel shadow-sm col-11 fade-in" id="project11">
+  <div class="row">
+      <div class="col order-first my-auto">
+          <a href="{% url 'eleven_gallery' %}"><img class="img-thumbnail " src="{% static "images/projects/6/6_lk_01.jpg" %}" alt=""></a>
+      </div>
+      <div class="col order-last my-auto">
+        <br>
+        <h3 class="font-weight-bold">ท่าเทียบเรือ</h3>
+        <h5>เจ้าของโครงการ&nbsp;:&nbsp;&nbsp;&nbsp;บจก.พี.เอ็น.วี.คลังสินค้า</h5>
+        <br class="rwd-break">
+        <h6>สถานที่ก่อสร้าง&nbsp;:&nbsp;&nbsp;&nbsp;อ.นครหลวง จ.พระนครศรีอยุธยา</h6>
+        <hr class="" size="3">
+        <a href="{% url 'eleven_gallery' %}" class="btn btn-primary" role="button" aria-disabled="true">Read More</button></a>
+        <div class="panel-footer tag padmetop">
+          <span class="badge badge-secondary label label-primary hidden">All</span>
+          <span class="badge badge-secondary label label-primary">Port</span>
+        </div>
+        <br>
+      </div>
+  </div>
+</div>
+
+<div id="br12">
+  <br>
+</div>
+
+<!-- 12 -->
+<div class="container grey rounded my-auto panel shadow-sm col-11 fade-in" id="project12">
+  <div class="row">
+      <div class="col order-first my-auto">
+          <a href="{% url 'twelve_gallery' %}"><img class="img-thumbnail " src="{% static "images/projects/6/6_lk_01.jpg" %}" alt=""></a>
+      </div>
+      <div class="col order-last my-auto">
+        <br>
+        <h3 class="font-weight-bold">อาคารพิพิธภัณฑ์</h3>
+        <h5>เจ้าของโครงการ&nbsp;:&nbsp;&nbsp;&nbsp;PTT LNG.</h5>
+        <br class="rwd-break">
+        <h6>สถานที่ก่อสร้าง&nbsp;:&nbsp;&nbsp;&nbsp;อ.เมือง จ.ระยอง</h6>
+        <hr class="" size="3">
+        <a href="{% url 'twelve_gallery' %}" class="btn btn-primary" role="button" aria-disabled="true">Read More</button></a>
+        <div class="panel-footer tag padmetop">
+          <span class="badge badge-secondary label label-primary hidden">All</span>
+          <span class="badge badge-secondary label label-primary">Building</span>
+        </div>
+        <br>
+      </div>
+  </div>
+</div>
+
+<div id="br13">
+  <br>
+</div>
+
+<!-- 13 -->
+<div class="container grey rounded my-auto panel shadow-sm col-11 fade-in" id="project13">
+  <div class="row">
+      <div class="col order-first my-auto">
+          <a href="{% url 'thirteen_gallery' %}"><img class="img-thumbnail " src="{% static "images/projects/6/6_lk_01.jpg" %}" alt=""></a>
+      </div>
+      <div class="col order-last my-auto">
+        <br>
+        <h3 class="font-weight-bold">ท่าเทียบเรือ</h3>
+        <h5>เจ้าของโครงการ&nbsp;:&nbsp;&nbsp;&nbsp;บจก.โชคชัยคลังสินค้า</h5>
+        <br class="rwd-break">
+        <h6>สถานที่ก่อสร้าง&nbsp;:&nbsp;&nbsp;&nbsp;อ.นครหลวง จ.พระนครศรีอยุธยา</h6>
+        <hr class="" size="3">
+        <a href="{% url 'thirteen_gallery' %}" class="btn btn-primary" role="button" aria-disabled="true">Read More</button></a>
+        <div class="panel-footer tag padmetop">
+          <span class="badge badge-secondary label label-primary hidden">All</span>
+          <span class="badge badge-secondary label label-primary">Port</span>
+        </div>
+        <br>
+      </div>
+  </div>
+</div>
+
+<div id="br14">
+  <br>
+</div>
+
+<!-- 14 -->
+<div class="container grey rounded my-auto panel shadow-sm col-11 fade-in" id="project14">
+  <div class="row">
+      <div class="col order-first my-auto">
+          <a href="{% url 'fourteen_gallery' %}"><img class="img-thumbnail " src="{% static "images/projects/6/6_lk_01.jpg" %}" alt=""></a>
+      </div>
+      <div class="col order-last my-auto">
+        <br>
+        <h3 class="font-weight-bold">ท่าเทียบเรือ และเขื่อนเรียงหินป้องกันน้ำเซาะ</h3>
+        <h5>เจ้าของโครงการ&nbsp;:&nbsp;&nbsp;&nbsp;บจก.แสงฟ้าอะกริโปรดักส์</h5>
+        <br class="rwd-break">
+        <h6>สถานที่ก่อสร้าง&nbsp;:&nbsp;&nbsp;&nbsp;อ.ท่าเรือ จ.พระนครศรีอยุธยา</h6>
+        <hr class="" size="3">
+        <a href="{% url 'fourteen_gallery' %}" class="btn btn-primary" role="button" aria-disabled="true">Read More</button></a>
+        <div class="panel-footer tag padmetop">
+          <span class="badge badge-secondary label label-primary hidden">All</span>
+          <span class="badge badge-secondary label label-primary">Port</span>
+        </div>
+        <br>
+      </div>
+  </div>
+</div>
+
+<div id="br15">
+  <br>
+</div>
+
+<!-- 15 -->
+<div class="container grey rounded my-auto panel shadow-sm col-11 fade-in" id="project15">
+  <div class="row">
+      <div class="col order-first my-auto">
+          <a href="{% url 'fifteen_gallery' %}"><img class="img-thumbnail " src="{% static "images/projects/6/6_lk_01.jpg" %}" alt=""></a>
+      </div>
+      <div class="col order-last my-auto">
+        <br>
+        <h3 class="font-weight-bold">อาคารสำนักงาน</h3>
+        <h5>เจ้าของโครงการ&nbsp;:&nbsp;&nbsp;&nbsp;บจก.แสงฟ้าอะกริโปรดักส์</h5>
+        <br class="rwd-break">
+        <h6>สถานที่ก่อสร้าง&nbsp;:&nbsp;&nbsp;&nbsp;อ.ท่าเรือ จ.พระนครศรีอยุธยา</h6>
+        <hr class="" size="3">
+        <a href="{% url 'fifteen_gallery' %}" class="btn btn-primary" role="button" aria-disabled="true">Read More</button></a>
+        <div class="panel-footer tag padmetop">
+          <span class="badge badge-secondary label label-primary hidden">All</span>
+          <span class="badge badge-secondary label label-primary">Building</span>
+        </div>
+        <br>
+      </div>
+  </div>
+</div>
+
+<div id="br16">
+  <br>
+</div>
+
+<!-- 16 -->
+<div class="container grey rounded my-auto panel shadow-sm col-11 fade-in" id="project16">
+  <div class="row">
+      <div class="col order-first my-auto">
+          <a href="{% url 'sixteen_gallery' %}"><img class="img-thumbnail " src="{% static "images/projects/6/6_lk_01.jpg" %}" alt=""></a>
+      </div>
+      <div class="col order-last my-auto">
+        <br>
+        <h3 class="font-weight-bold">เขื่อนป้องกันน้ำเซาะ</h3>
+        <h5>เจ้าของโครงการ&nbsp;:&nbsp;&nbsp;&nbsp;บจก.เปรมไทย เอ็นเนอร์ยี่</h5>
+        <br class="rwd-break">
+        <h6>สถานที่ก่อสร้าง&nbsp;:&nbsp;&nbsp;&nbsp;อ.นครหลวง จ.พระนครศรีอยุธยา</h6>
+        <hr class="" size="3">
+        <a href="{% url 'sixteen_gallery' %}" class="btn btn-primary" role="button" aria-disabled="true">Read More</button></a>
+        <div class="panel-footer tag padmetop">
+          <span class="badge badge-secondary label label-primary hidden">All</span>
+          <span class="badge badge-secondary label label-primary">Infrastructure</span>
+        </div>
+        <br>
+      </div>
+  </div>
+</div>
+
+<div id="br17">
+  <br>
+</div>
+
+<!-- 17 -->
+<div class="container grey rounded my-auto panel shadow-sm col-11 fade-in" id="project17">
+  <div class="row">
+      <div class="col order-first my-auto">
+          <a href="{% url 'seventeen_gallery' %}"><img class="img-thumbnail " src="{% static "images/projects/6/6_lk_01.jpg" %}" alt=""></a>
+      </div>
+      <div class="col order-last my-auto">
+        <br>
+        <h3 class="font-weight-bold">อาคารคลังสินค้า Phase 2</h3>
+        <h5>เจ้าของโครงการ&nbsp;:&nbsp;&nbsp;&nbsp;บจก.เจียไต๋</h5>
+        <br class="rwd-break">
+        <h6>สถานที่ก่อสร้าง&nbsp;:&nbsp;&nbsp;&nbsp;อ.บางไทร จ.พระนครศรีอยุธยา</h6>
+        <hr class="" size="3">
+        <a href="{% url 'seventeen_gallery' %}" class="btn btn-primary" role="button" aria-disabled="true">Read More</button></a>
+        <div class="panel-footer tag padmetop">
+          <span class="badge badge-secondary label label-primary hidden">All</span>
+          <span class="badge badge-secondary label label-primary">Building</span>
+        </div>
+        <br>
+      </div>
+  </div>
+</div>
+
+<div id="br18">
+  <br>
+</div>
+
+<!-- 18 -->
+<div class="container grey rounded my-auto panel shadow-sm col-11 fade-in" id="project18">
+  <div class="row">
+      <div class="col order-first my-auto">
+          <a href="{% url 'eightteen_gallery' %}"><img class="img-thumbnail " src="{% static "images/projects/6/6_lk_01.jpg" %}" alt=""></a>
+      </div>
+      <div class="col order-last my-auto">
+        <br>
+        <h3 class="font-weight-bold">ก่อสร้างท่าเรือ</h3>
+        <h5>เจ้าของโครงการ&nbsp;:&nbsp;&nbsp;&nbsp;บจก.บางไทร พร็อพเพอร์ตี้</h5>
+        <br class="rwd-break">
+        <h6>สถานที่ก่อสร้าง&nbsp;:&nbsp;&nbsp;&nbsp;อ.บางไทร จ.พระนครศรีอยุธยา</h6>
+        <hr class="" size="3">
+        <a href="{% url 'eightteen_gallery' %}" class="btn btn-primary" role="button" aria-disabled="true">Read More</button></a>
+        <div class="panel-footer tag padmetop">
+          <span class="badge badge-secondary label label-primary hidden">All</span>
+          <span class="badge badge-secondary label label-primary">Port</span>
+        </div>
+        <br>
+      </div>
+  </div>
+</div>
+
+<div id="br19">
+  <br>
+</div>
+
+<!-- 19 -->
+<div class="container grey rounded my-auto panel shadow-sm col-11 fade-in" id="project19">
+  <div class="row">
+      <div class="col order-first my-auto">
+          <a href="{% url 'nineteen_gallery' %}"><img class="img-thumbnail " src="{% static "images/projects/6/6_lk_01.jpg" %}" alt=""></a>
+      </div>
+      <div class="col order-last my-auto">
+        <br>
+        <h3 class="font-weight-bold">ก่อสร้างอาคารโรงงานพร้อมสำนักงานโครงการ Packing Building 2</h3>
+        <h5>เจ้าของโครงการ&nbsp;:&nbsp;&nbsp;&nbsp;บจก.แสงฟ้าอะกริโปรดักส์</h5>
+        <br class="rwd-break">
+        <h6>สถานที่ก่อสร้าง&nbsp;:&nbsp;&nbsp;&nbsp;อ.ป่าโมก จ.อ่างทอง</h6>
+        <hr class="" size="3">
+        <a href="{% url 'nineteen_gallery' %}" class="btn btn-primary" role="button" aria-disabled="true">Read More</button></a>
+        <div class="panel-footer tag padmetop">
+          <span class="badge badge-secondary label label-primary hidden">All</span>
+          <span class="badge badge-secondary label label-primary">Factory</span>
+        </div>
+        <br>
+      </div>
+  </div>
+</div>
+
+<div id="br20">
+  <br>
+</div>
+
+<!-- 20 -->
+<div class="container grey rounded my-auto panel shadow-sm col-11 fade-in" id="project20">
+  <div class="row">
+      <div class="col order-first my-auto">
+          <a href="{% url 'twenty_gallery' %}"><img class="img-thumbnail " src="{% static "images/projects/6/6_lk_01.jpg" %}" alt=""></a>
+      </div>
+      <div class="col order-last my-auto">
+        <br>
+        <h3 class="font-weight-bold">ก่อสร้างอาคารบรรจุปุ๋ย พร้อมลานคอนกรีตเสริมเหล็ก</h3>
+        <h5>เจ้าของโครงการ&nbsp;:&nbsp;&nbsp;&nbsp;บจก.ยิบอินซอยและแย๊คส์</h5>
+        <br class="rwd-break">
+        <h6>สถานที่ก่อสร้าง&nbsp;:&nbsp;&nbsp;&nbsp;อ.นครหลวง จ.พระนครศรีอยุธยา</h6>
+        <hr class="" size="3">
+        <a href="{% url 'twenty_gallery' %}" class="btn btn-primary" role="button" aria-disabled="true">Read More</button></a>
+        <div class="panel-footer tag padmetop">
+          <span class="badge badge-secondary label label-primary hidden">All</span>
+          <span class="badge badge-secondary label label-primary">Factory</span>
+        </div>
+        <br>
+      </div>
+  </div>
+</div>
+
+<div id="br21">
+  <br>
+</div>
+
+<!-- 21 -->
+<div class="container grey rounded my-auto panel shadow-sm col-11 fade-in" id="project21">
+  <div class="row">
+      <div class="col order-first my-auto">
+          <a href="{% url 'twentyone_gallery' %}"><img class="img-thumbnail " src="{% static "images/projects/6/6_lk_01.jpg" %}" alt=""></a>
+      </div>
+      <div class="col order-last my-auto">
+        <br>
+        <h3 class="font-weight-bold">ก่อสร้างอาคารบรรจุปุ๋ย พร้อมลานคอนกรีตเสริมเหล็ก Phase 2</h3>
+        <h5>เจ้าของโครงการ&nbsp;:&nbsp;&nbsp;&nbsp;บจก.ยิบอินซอยและแย๊คส์</h5>
+        <br class="rwd-break">
+        <h6>สถานที่ก่อสร้าง&nbsp;:&nbsp;&nbsp;&nbsp;อ.นครหลวง จ.พระนครศรีอยุธยา</h6>
+        <hr class="" size="3">
+        <a href="{% url 'twentyone_gallery' %}" class="btn btn-primary" role="button" aria-disabled="true">Read More</button></a>
+        <div class="panel-footer tag padmetop">
+          <span class="badge badge-secondary label label-primary hidden">All</span>
+          <span class="badge badge-secondary label label-primary">Factory</span>
+        </div>
+        <br>
+      </div>
+  </div>
+</div>
+
+<div id="br22">
+  <br>
+</div>
+
+<!-- 22 -->
+<div class="container grey rounded my-auto panel shadow-sm col-11 fade-in" id="project22">
+  <div class="row">
+      <div class="col order-first my-auto">
+          <a href="{% url 'twentytwo_gallery' %}"><img class="img-thumbnail " src="{% static "images/projects/6/6_lk_01.jpg" %}" alt=""></a>
+      </div>
+      <div class="col order-last my-auto">
+        <br>
+        <h3 class="font-weight-bold">ท่าเทียบเรือและเขื่อนป้องกันน้ำเซาะ พร้อมโกรกขึ้นลงสินค้า</h3>
+        <h5>เจ้าของโครงการ&nbsp;:&nbsp;&nbsp;&nbsp;หจก.สวัสดิ์ไพบูลย์ การเกษตร</h5>
+        <br class="rwd-break">
+        <h6>สถานที่ก่อสร้าง&nbsp;:&nbsp;&nbsp;&nbsp;อ.นครหลวง จ.พระนครศรีอยุธยา</h6>
+        <hr class="" size="3">
+        <a href="{% url 'twentytwo_gallery' %}" class="btn btn-primary" role="button" aria-disabled="true">Read More</button></a>
+        <div class="panel-footer tag padmetop">
+          <span class="badge badge-secondary label label-primary hidden">All</span>
+          <span class="badge badge-secondary label label-primary">Port</span>
+        </div>
+        <br>
+      </div>
+  </div>
+</div>
+
+<div id="br23">
+  <br>
+</div>
+
+<!-- 23 -->
+<div class="container grey rounded my-auto panel shadow-sm col-11 fade-in" id="project23">
+  <div class="row">
+      <div class="col order-first my-auto">
+          <a href="{% url 'twentythree_gallery' %}"><img class="img-thumbnail " src="{% static "images/projects/6/6_lk_01.jpg" %}" alt=""></a>
+      </div>
+      <div class="col order-last my-auto">
+        <br>
+        <h3 class="font-weight-bold">ก่อสร้างท่าเทียบเรือ และโกรกขึ้นลงสินค้า ระยะที่ 2</h3>
+        <h5>เจ้าของโครงการ&nbsp;:&nbsp;&nbsp;&nbsp;บมจ.ลานนารีซอร์สเซส</h5>
+        <br class="rwd-break">
+        <h6>สถานที่ก่อสร้าง&nbsp;:&nbsp;&nbsp;&nbsp;อ.นครหลวง จ.พระนครศรีอยุธยา</h6>
+        <hr class="" size="3">
+        <a href="{% url 'twentythree_gallery' %}" class="btn btn-primary" role="button" aria-disabled="true">Read More</button></a>
+        <div class="panel-footer tag padmetop">
+          <span class="badge badge-secondary label label-primary hidden">All</span>
+          <span class="badge badge-secondary label label-primary">Port</span>
+        </div>
+        <br>
+      </div>
+  </div>
+</div>
+
+<div id="br24">
+  <br>
+</div>
+
+<!-- 24 -->
+<div class="container grey rounded my-auto panel shadow-sm col-11 fade-in" id="project24">
+  <div class="row">
+      <div class="col order-first my-auto">
+          <a href="{% url 'twentyfour_gallery' %}"><img class="img-thumbnail " src="{% static "images/projects/6/6_lk_01.jpg" %}" alt=""></a>
+      </div>
+      <div class="col order-last my-auto">
+        <br>
+        <h3 class="font-weight-bold">อาคารโรงงาน (ห้องเย็น) พร้อมสำนักงาน</h3>
+        <h5>เจ้าของโครงการ&nbsp;:&nbsp;&nbsp;&nbsp;บจก. มนต์ โลจีสติก</h5>
+        <br class="rwd-break">
+        <h6>สถานที่ก่อสร้าง&nbsp;:&nbsp;&nbsp;&nbsp;อ.บางพลี จ. สมุทรปราการ</h6>
+        <hr class="" size="3">
+        <a href="{% url 'twentyfour_gallery' %}" class="btn btn-primary" role="button" aria-disabled="true">Read More</button></a>
+        <div class="panel-footer tag padmetop">
+          <span class="badge badge-secondary label label-primary hidden">All</span>
+          <span class="badge badge-secondary label label-primary">Factory</span>
+        </div>
+        <br>
+      </div>
+  </div>
+</div>
+
+<div id="br25">
+  <br>
+</div>
+
+<!-- 25 -->
+<div class="container grey rounded my-auto panel shadow-sm col-11 fade-in" id="project25">
+  <div class="row">
+      <div class="col order-first my-auto">
+          <a href="{% url 'twentyfive_gallery' %}"><img class="img-thumbnail " src="{% static "images/projects/6/6_lk_01.jpg" %}" alt=""></a>
+      </div>
+      <div class="col order-last my-auto">
+        <br>
+        <h3 class="font-weight-bold">อาคารคลังสินค้าพร้อมสำนักงาน</h3>
+        <h5>เจ้าของโครงการ&nbsp;:&nbsp;&nbsp;&nbsp;บจก. มนต์ โลจีสติก</h5>
+        <br class="rwd-break">
+        <h6>สถานที่ก่อสร้าง&nbsp;:&nbsp;&nbsp;&nbsp;อ.บางพลี จ. สมุทรปราการ</h6>
+        <hr class="" size="3">
+        <a href="{% url 'twentyfive_gallery' %}" class="btn btn-primary" role="button" aria-disabled="true">Read More</button></a>
+        <div class="panel-footer tag padmetop">
+          <span class="badge badge-secondary label label-primary hidden">All</span>
+          <span class="badge badge-secondary label label-primary">Factory</span>
+        </div>
+        <br>
+      </div>
+  </div>
+</div>
+
+<div id="br26">
+  <br>
+</div>
+
+<!-- 26 -->
+<div class="container grey rounded my-auto panel shadow-sm col-11 fade-in" id="project26">
+  <div class="row">
+      <div class="col order-first my-auto">
+          <a href="{% url 'twentysix_gallery' %}"><img class="img-thumbnail " src="{% static "images/projects/6/6_lk_01.jpg" %}" alt=""></a>
+      </div>
+      <div class="col order-last my-auto">
+        <br>
+        <h3 class="font-weight-bold">อาคารศาลาประชาคม</h3>
+        <h5>เจ้าของโครงการ&nbsp;:&nbsp;&nbsp;&nbsp;จังหวัดสงขลา</h5>
+        <br class="rwd-break">
+        <h6>สถานที่ก่อสร้าง&nbsp;:&nbsp;&nbsp;&nbsp;อ.หาดใหญ่ จ.สงขลา</h6>
+        <hr class="" size="3">
+        <a href="{% url 'twentysix_gallery' %}" class="btn btn-primary" role="button" aria-disabled="true">Read More</button></a>
+        <div class="panel-footer tag padmetop">
+          <span class="badge badge-secondary label label-primary hidden">All</span>
+          <span class="badge badge-secondary label label-primary">Building</span>
+        </div>
+        <br>
+      </div>
+  </div>
+</div>
 {% endblock body_block %}
