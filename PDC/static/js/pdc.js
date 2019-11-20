@@ -11,10 +11,11 @@ $(document).ready(function() {
         //   console.log( JSON.stringify($("#project" + x ).html()) );
         console.log(JSON.stringify($("#project" + x ).html()).indexOf(tag));
           $("#project" + x ).hide();
+          $("#br" + x ).show();
           $("#project" + x ).fadeIn();
         } else {
           $("#project" + x ).hide();
-          $("#br" + x).hide();
+          $("#br" + x ).hide();
         };
         // console.log(tag);
         //console.log(JSON.stringify($("#project" + x ).html()).indexOf(tag));
