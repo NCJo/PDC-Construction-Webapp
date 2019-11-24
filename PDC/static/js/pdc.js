@@ -114,7 +114,7 @@ $(document).ready(function() {
             // $('#map').removeClass("map-border");
             $('#map_style').removeClass("map-border");
             $('#map_style').css("padding-right", "0px");
-            $('#map').css({"height":"20em"});
+            $('#map').css({"height":"30em"});
             $('#company-info').addClass("pl-4");
             $('#company-info').addClass("pt-3");
         } else if (ww > 767) {
