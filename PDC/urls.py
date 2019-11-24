@@ -69,12 +69,9 @@ urlpatterns = [
     path('projects/twentyfour/', views.twentyfour_gallery, name="twentyfour_gallery"),
     path('projects/twentyfive/', views.twentyfive_gallery, name="twentyfive_gallery"),
     path('projects/twentysix/', views.twentysix_gallery, name="twentysix_gallery"),
+    # End of projects pages
 
-
-
-
-    # End of projects
-
+    path('map/', views.map, name='map'),
     path('activities/', views.activities, name='activities'),
     path('about_us/', views.about_us, name='about_us'),
     path('contact_us/', views.contact_us, name='contact_us'),

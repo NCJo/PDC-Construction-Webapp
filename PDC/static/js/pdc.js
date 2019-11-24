@@ -120,7 +120,7 @@ $(document).ready(function() {
         } else if (ww > 767) {
             $('#map').addClass("pr-4");
             // $('#map').addClass("map-border");
-            $('#map_style').AddClass("map-border");
+            $('#map_style').addClass("map-border");
             $('#map_style').css("padding-right", "15px");
             $('#map').css({"height":"40em"});
             $('#company-info').removeClass("pl-4");

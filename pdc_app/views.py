@@ -123,7 +123,8 @@ def twentysix_gallery(request):
 # End of Projects
 
 
-
+def map(request):
+    return render(request, 'pdc_templates/map.html')
 
 def activities(request):
     return render(request, 'pdc_templates/activities.html')
