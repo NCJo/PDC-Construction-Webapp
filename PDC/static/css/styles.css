@@ -287,6 +287,9 @@ hr {
 }
 #map {
     height: 40em;
+    border-left: 15px;
+    border-right: 15px;
+
 }
 
 /* +++++++++++++++++++++++++++++++++++++++++++ */
