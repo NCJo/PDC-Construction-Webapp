@@ -28,13 +28,14 @@ $(document).ready(function() {
 // End of Filter script
 
 // Script for flexible footer
-$(document).ready(function() {
-    var indexPage = $("#landing-carousel")
-    console.log(indexPage.length);
-    if (indexPage.length == 0) {
-        $("#only-on-index").hide();
-    }
-});
+// Actually Very useful
+// $(document).ready(function() {
+//     var indexPage = $("#landing-carousel")
+//     console.log(indexPage.length);
+//     if (indexPage.length == 0) {
+//         $("#only-on-index").hide();
+//     }
+// });
 // End of Flexible Footer
 
 // Scroll down to hide navbar

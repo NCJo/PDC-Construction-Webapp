@@ -40,6 +40,9 @@ urlpatterns = [
 
 
     # Projects
+    # Please refer to 
+    # https://drive.google.com/file/d/1es4bD4TvvOQVTKmRRGr2XQxpGhYT-rem/view
+    # for projects name and details
     path('projects/one/', views.one_gallery, name="one_gallery"),
     path('projects/two/', views.two_gallery, name="two_gallery"),
     path('projects/three/', views.three_gallery, name="three_gallery"),
