@@ -15,7 +15,7 @@ def index(request):
 def projects(request):
     return render(request, 'pdc_templates/projects.html')
 
-# OLD
+# LEGACY
 
 def samed_gallery(request):
     return render(request, 'pdc_templates/samed.html')
@@ -35,7 +35,7 @@ def yip_gallery(request):
 
 def sangfah_gallery(request):
     return render(request, 'pdc_templates/sangfah.html')
-# END OF OLD
+# END OF LEGACY
 
 # Projects
 
@@ -119,6 +119,15 @@ def twentyfive_gallery(request):
 
 def twentysix_gallery(request):
     return render(request, 'pdc_templates/projects/twentysix.html')
+
+def twentyseven_gallery(request):
+    return render(request, 'pdc_templates/projects/twentyseven.html')
+
+def twentyeight_gallery(request):
+    return render(request, 'pdc_templates/projects/twentyeight.html')
+
+def twentynine_gallery(request):
+    return render(request, 'pdc_templates/projects/twentynine.html')
 
 # End of Projects
 
